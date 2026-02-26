@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+    <title>Lizaa</title>
+</head>
+<body>
+    
+<style>
+  body {
+  font-family: 'DM Sans', sans-serif;
+}
+  </style>
+</head>
+
+
+  <!-- NAVBAR -->
+<header class="w-full bg-white/70 backdrop-blur-md sticky top-0 z-50 ">
+  <div class="max-w-[1330px] mx-auto px-6 py-5 flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="text-lg">
+      <span class="font-semibold text-black">Liza</span>
+      <span class="text-gray-500">Malashchuk</span>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-8 text-lg text-gray-600 font-medium">
+      <a href="#" class="hover:text-black transition">Home page</a>
+      <a href="about.html" class="text-black">About me</a>
+      <a href="#" class="hover:text-black transition">Portfolio</a>
+
+      <!-- Social -->
+    
+
+      <!-- Button -->
+      <button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
+        Get in touch
+      </button>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5">
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden px-6 pb-6">
+    <div class="flex flex-col gap-4 text-gray-700 font-medium">
+      <a href="#">Home page</a>
+      <a href="#" class="text-black">About me</a>
+      <a href="#">Portfolio</a>
+      <button class="mt-3 bg-black text-white px-6 py-2.5 rounded-full w-fit">
+        Get in touch
+      </button>
+    </div>
+  </div>
+
+</header>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+
+  <!-- HERO SECTION -->
+ 
+ 
+  <section class="relative max-w-[1330px] mx-auto px-6 py-24">
+
+    <!-- Background gradient blur -->
+    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 opacity-40 blur-3xl"></div>
+
+    <div class="flex items-start gap-16">
+
+      <!-- Left Content -->
+      <div class="max-w-[650px]">
+
+        <!-- Profile Image -->
+        <img src="assets/photo_6127472787594089080_y (1).jpg" alt="Profile"
+          class="w-28 h-28 rounded-full object-cover mb-10 shadow-md">
+
+        <!-- Heading -->
+        <h1 class="text-5xl font-extrabold text-black leading-tight mb-8">
+          Hi, I'm Liza — Product designer
+        </h1>
+
+        <!-- Description -->
+        <p class="text-2xl text-gray-500 leading-relaxed mb-8">
+          I enjoy creating products from scratch and improve existing ones.
+          In simple terms, I design <span class="text-black font-medium">web platforms</span>
+          that make a profit or enhance business.
+        </p>
+
+        <!-- Tags -->
+        <div class="flex gap-3 mb-10 flex-wrap">
+          <span class="px-4 py-2 bg-gray-100 text-gray-600 text-sm rounded-lg"># AI</span>
+          <span class="px-4 py-2 bg-gray-100 text-gray-600 text-sm rounded-lg"># FinTech</span>
+          <span class="px-4 py-2 bg-gray-100 text-gray-600 text-sm rounded-lg"># MarketingTech</span>
+          <span class="px-4 py-2 bg-gray-100 text-gray-600 text-sm rounded-lg"># AdTech</span>
+          <span class="px-4 py-2 bg-gray-100 text-gray-600 text-sm rounded-lg"># Trading</span>
+        </div>
+
+        <!-- CTA -->
+        <button class="bg-black text-white px-8 py-3 rounded-full font-medium hover:opacity-90">
+          Let's talk
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Floating Labels -->
+    <div class="absolute top-24 right-20 bg-blue-500 text-white text-sm px-4 py-2 rounded-full shadow">
+      User interactions
+    </div>
+
+    <div class="absolute top-60 right-10 bg-orange-500 text-white text-sm px-4 py-2 rounded-full shadow">
+      Analytics
+    </div>
+
+    <div class="absolute bottom-20 right-32 bg-purple-600 text-white text-sm px-4 py-2 rounded-full shadow">
+      User experience
+    </div>
+
+  </section>
+
+
+
+
+  <!-- Portfolio -->
+
+
+<div class="max-w-[1330px] m-auto mt-34 ">
+
+    <section class=" py-20">
+  <div class="mx-auto px-6">
+
+    <!-- Section Header -->
+    <div class="mb-14">
+      <h2 class="text-[40px] font-bold text-black mb-4">
+        Portfolio projects
+      </h2>
+      <p class="text-lg text-[#6B7280] max-w-[750px]">
+        Concise case snapshots that show how thoughtful design turns complex product challenges into tangible wins.
+      </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- ================= CARD 1 ================= -->
+      <div class="bg-[#fafafa] rounded-[28px] border border-[#E5E7EB] overflow-hidden">
+
+        <!-- Top Image Area -->
+        <div class="h-[400px] bg-gradient-to-br from-purple-200 via-purple-100 to-white flex items-center justify-center">
+          <img src="assets/por.jpg" class="max-h-full object-contain">
+        </div>
+
+        <!-- Content -->
+        <div class="p-8">
+
+          <!-- Tags -->
+          <div class="flex gap-3 mb-6 flex-wrap">
+            <span class="px-4 py-2 bg-[#e4e4e4] text-[#707070] text-sm rounded-lg">
+              Web Dashboard
+            </span>
+          </div>
+
+          <!-- Title -->
+          <h3 class="text-2xl font-semibold text-black mb-4 leading-snug">
+Global Garner Vendor Dashboard App
+          </h3>
+
+          <!-- Description -->
+          <p class="text-[#6B7280] text-md mb-6">
+The Vendor App enables sellers to manage their business operations anytime and from anywhere with complete convenience. It provides seamless control over product listings, pricing, inventory updates, and order management through a user-friendly interface.          </p>
+
+
+
+        </div>
+      </div>
+
+
+      <!-- ================= CARD 2 ================= -->
+      <div class="bg-[#fafafa] rounded-[28px] border border-[#E5E7EB] overflow-hidden">
+
+        <!-- Top Image Area -->
+        <div class="h-[360px] bg-gradient-to-br from-blue-200 via-blue-100 to-white flex items-center justify-center">
+          <img src="assets/por.jpg" class="max-h-full object-contain">
+        </div>
+
+        <!-- Content -->
+        <div class="p-8">
+
+          <!-- Tags -->
+          <div class="flex gap-3 mb-6 flex-wrap">
+            <span class="px-4 py-2 bg-[#F3F4F6] text-[#6B7280] text-sm rounded-lg">
+              # Crypto / Web 3
+            </span>
+            <span class="px-4 py-2 bg-[#F3F4F6] text-[#6B7280] text-sm rounded-lg">
+              # AdTech
+            </span>
+          </div>
+
+          <!-- Title -->
+          <h3 class="text-2xl font-semibold text-black mb-4 leading-snug">
+            Web3 data-sharing platform for brand engagement
+          </h3>
+
+          <!-- Description -->
+          <p class="text-[#6B7280] mb-6">
+            Gives users data ownership and brands richer insights — at scale.
+          </p>
+
+          <!-- Highlights -->
+          <div>
+            <p class="text-sm font-semibold text-black mb-4">Highlights</p>
+
+            <div class="flex gap-10">
+              <div>
+                <p class="text-lg font-semibold text-black">2M+</p>
+                <p class="text-sm text-[#6B7280]">raised funds</p>
+              </div>
+
+              <div>
+                <p class="text-lg font-semibold text-black">3</p>
+                <p class="text-sm text-[#6B7280]">integrated portals</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+            <!-- ================= CARD 3 ================= -->
+ <div class="bg-[#fafafa] rounded-[28px] border border-[#E5E7EB] overflow-hidden">
+
+        <!-- Top Image Area -->
+        <div class="h-[360px] bg-gradient-to-br from-blue-200 via-blue-100 to-white flex items-center justify-center">
+          <img src="assets/por.jpg" class="max-h-full object-contain">
+        </div>
+
+        <!-- Content -->
+        <div class="p-8">
+
+          <!-- Tags -->
+          <div class="flex gap-3 mb-6 flex-wrap">
+            <span class="px-4 py-2 bg-[#F3F4F6] text-[#6B7280] text-sm rounded-lg">
+              # Crypto / Web 3
+            </span>
+            <span class="px-4 py-2 bg-[#F3F4F6] text-[#6B7280] text-sm rounded-lg">
+              # AdTech
+            </span>
+          </div>
+
+          <!-- Title -->
+          <h3 class="text-2xl font-semibold text-black mb-4 leading-snug">
+            Web3 data-sharing platform for brand engagement
+          </h3>
+
+          <!-- Description -->
+          <p class="text-[#6B7280] mb-6">
+            Gives users data ownership and brands richer insights — at scale.
+          </p>
+
+          <!-- Highlights -->
+          <div>
+            <p class="text-sm font-semibold text-black mb-4">Highlights</p>
+
+            <div class="flex gap-10">
+              <div>
+                <p class="text-lg font-semibold text-black">2M+</p>
+                <p class="text-sm text-[#6B7280]">raised funds</p>
+              </div>
+
+              <div>
+                <p class="text-lg font-semibold text-black">3</p>
+                <p class="text-sm text-[#6B7280]">integrated portals</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+                  <!-- ================= CARD 3 ================= -->
+<div class="bg-[#fafafa] rounded-[28px] border border-[#E5E7EB] overflow-hidden">
+
+        <!-- Top Image Area -->
+        <div class="h-[360px] bg-gradient-to-br from-blue-200 via-blue-100 to-white flex items-center justify-center">
+          <img src="assets/por.jpg" class="max-h-full object-contain">
+        </div>
+
+        <!-- Content -->
+        <div class="p-8">
+
+          <!-- Tags -->
+          <div class="flex gap-3 mb-6 flex-wrap">
+            <span class="px-4 py-2 bg-[#F3F4F6] text-[#6B7280] text-sm rounded-lg">
+              # Crypto / Web 3
+            </span>
+            <span class="px-4 py-2 bg-[#F3F4F6] text-[#6B7280] text-sm rounded-lg">
+              # AdTech
+            </span>
+          </div>
+
+          <!-- Title -->
+          <h3 class="text-2xl font-semibold text-black mb-4 leading-snug">
+            Web3 data-sharing platform for brand engagement
+          </h3>
+
+          <!-- Description -->
+          <p class="text-[#6B7280] mb-6">
+            Gives users data ownership and brands richer insights — at scale.
+          </p>
+
+          <!-- Highlights -->
+          <div>
+            <p class="text-sm font-semibold text-black mb-4">Highlights</p>
+
+            <div class="flex gap-10">
+              <div>
+                <p class="text-lg font-semibold text-black">2M+</p>
+                <p class="text-sm text-[#6B7280]">raised funds</p>
+              </div>
+
+              <div>
+                <p class="text-lg font-semibold text-black">3</p>
+                <p class="text-sm text-[#6B7280]">integrated portals</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- AAAAAA -->
+
+<div class="bg-[#efeff0]">
+    <section class="max-w-[1330px] mx-auto px-6 py-24">
+
+    <!-- Heading -->
+    <h2 class="text-5xl font-semibold text-gray-400 mb-20">
+      What I can do for you
+    </h2>
+
+    <!-- 3 Columns -->
+    <div class="grid md:grid-cols-3 gap-16">
+
+      <!-- Column 1 -->
+      <div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+          For businesses
+        </h3>
+        <p class="text-gray-500 leading-relaxed">
+          I design interfaces that are friendly and valuable for customers and easy to implement for engineers.
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+          For startups
+        </h3>
+        <p class="text-gray-500 leading-relaxed">
+          I help to identify the problem and design an MVP. I will advise on tools for building if you don’t have an engineer or development resources.
+        </p>
+      </div>
+
+      <!-- Column 3 -->
+      <div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+          For product teams
+        </h3>
+        <p class="text-gray-500 leading-relaxed">
+          I design growth experiments and help your team look at the challenges differently to build a better product.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+</div>
+
+  
+<!-- FAQ -->
+
+<div class="max-w-[1330px] m-auto mt-34">
+    
+    <section class=" mx-auto px-6 py-20">
+
+  <!-- Heading -->
+  <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 mb-14">
+    Sometimes asked questions
+  </h2>
+
+  <!-- FAQ Container -->
+  <div class="space-y-6">
+
+    <!-- Item -->
+    <div class="border-b border-gray-300 pb-6">
+      <button class="faq-btn w-full flex justify-between items-center text-left text-lg md:text-xl font-medium text-gray-900">
+        Where do you do your best work?
+        <span class="text-2xl transition-transform duration-300">+</span>
+      </button>
+      <div class="faq-content hidden mt-4 text-gray-600 leading-relaxed">
+        I do my best work in collaborative environments where ideas can be explored openly and refined through feedback.
+      </div>
+    </div>
+
+    <!-- Item -->
+    <div class="border-b border-gray-300 pb-6">
+      <button class="faq-btn w-full flex justify-between items-center text-left text-lg md:text-xl font-medium text-gray-900">
+        What part of the design process excites you most?
+        <span class="text-2xl transition-transform duration-300">+</span>
+      </button>
+      <div class="faq-content hidden mt-4 text-gray-600 leading-relaxed">
+        I enjoy discovery and ideation phases the most — understanding users and turning insights into meaningful solutions.
+      </div>
+    </div>
+
+    <!-- Item -->
+    <div class="border-b border-gray-300 pb-6">
+      <button class="faq-btn w-full flex justify-between items-center text-left text-lg md:text-xl font-medium text-gray-900">
+        How do you design when users can't articulate what they need?
+        <span class="text-2xl transition-transform duration-300">+</span>
+      </button>
+      <div class="faq-content hidden mt-4 text-gray-600 leading-relaxed">
+        I rely on observation, research, and iterative prototyping to uncover real needs beyond verbal feedback.
+      </div>
+    </div>
+
+    <!-- Item -->
+    <div class="border-b border-gray-300 pb-6">
+      <button class="faq-btn w-full flex justify-between items-center text-left text-lg md:text-xl font-medium text-gray-900">
+        How has AI changed how you design?
+        <span class="text-2xl transition-transform duration-300">+</span>
+      </button>
+      <div class="faq-content hidden mt-4 text-gray-600 leading-relaxed">
+        AI has accelerated research, ideation, and testing workflows while allowing me to focus more on strategic thinking.
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  const buttons = document.querySelectorAll(".faq-btn");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector("span");
+
+      content.classList.toggle("hidden");
+      icon.classList.toggle("rotate-45");
+    });
+  });
+</script>
+
+</div>
+
+
+<!-- Footer -->
+
+<section class="w-full bg-black text-white rounded-t-[40px] py-20 px-6">
+    
+    <div class="max-w-3xl mx-auto text-center">
+
+      <!-- Small Heading -->
+      <p class="text-gray-400 text-lg md:text-xl mb-6">
+        Let’s discuss your project:
+      </p>
+
+      <!-- Email -->
+      <a href="mailto:elizaveta.malash@gmail.com"
+         class="inline-flex items-center gap-3 text-2xl md:text-3xl font-semibold 
+                border-b border-white pb-2 hover:opacity-80 transition">
+        
+        <!-- Arrow -->
+        <span class="text-xl">↘</span>
+        
+        elizaveta.malash@gmail.com
+      </a>
+
+      <!-- Social Icons -->
+      <div class="flex justify-center items-center gap-8 mt-10 text-gray-400 text-lg">
+        <a href="#" class="hover:text-white transition">in</a>
+        <a href="#" class="hover:text-white transition">Be</a>
+        <a href="#" class="hover:text-white transition">▶</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+</body>
+</html>
