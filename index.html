@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+    <link rel="stylesheet" href="style.css">
+
 <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script src="script.js" defer></script>
     <title>Lizaa</title>
 </head>
 <body>
-    
-<style>
-  body {
-  font-family: 'DM Sans', sans-serif;
-}
-  </style>
 </head>
 
 
@@ -24,16 +19,16 @@
   <div class="max-w-[1330px] mx-auto px-6 py-5 flex items-center justify-between">
 
     <!-- Logo -->
-    <div class="text-lg">
-      <span class="font-semibold text-black">Liza</span>
-      <span class="text-gray-500">Malashchuk</span>
+    <div class="text-2xl">
+      <span class="font-semibold font-mono text-black">Meet</span>
+      <!-- <span class="text-gray-500">Malashchuk</span> -->
     </div>
 
     <!-- Desktop Nav -->
     <nav class="hidden md:flex items-center gap-8 text-lg text-gray-600 font-medium">
-      <a href="#" class="hover:text-black transition">Home page</a>
+      <a href="index.html" class="text-black ">Home page</a>
       <a href="about.html" class="text-black">About me</a>
-      <a href="#" class="hover:text-black transition">Portfolio</a>
+      <a href="portfolio.html" class="text-black">Portfolio</a>
 
       <!-- Social -->
     
@@ -56,9 +51,9 @@
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="hidden md:hidden px-6 pb-6">
     <div class="flex flex-col gap-4 text-gray-700 font-medium">
-      <a href="#">Home page</a>
-      <a href="#" class="text-black">About me</a>
-      <a href="#">Portfolio</a>
+      <a href="index.html">Home page</a>
+      <a href="about.html" class="text-black">About me</a>
+      <a href="portfolio.html">Portfolio</a>
       <button class="mt-3 bg-black text-white px-6 py-2.5 rounded-full w-fit">
         Get in touch
       </button>
@@ -66,16 +61,6 @@
   </div>
 
 </header>
-
-<script>
-  const menuBtn = document.getElementById('menuBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
-
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
-
 
 
   <!-- HERO SECTION -->
@@ -489,36 +474,39 @@ The Vendor App enables sellers to manage their business operations anytime and f
 
 <!-- Footer -->
 
-<section class="w-full bg-black text-white rounded-t-[40px] py-20 px-6">
-    
-    <div class="max-w-3xl mx-auto text-center">
+<section class="w-full bg-black text-white rounded-t-[40px] 
+                py-16 md:py-20 px-6">
 
-      <!-- Small Heading -->
-      <p class="text-gray-400 text-lg md:text-xl mb-6">
-        Let’s discuss your project:
-      </p>
+  <div class="max-w-3xl mx-auto text-center">
 
-      <!-- Email -->
-      <a href="mailto:elizaveta.malash@gmail.com"
-         class="inline-flex items-center gap-3 text-2xl md:text-3xl font-semibold 
-                border-b border-white pb-2 hover:opacity-80 transition">
-        
-        <!-- Arrow -->
-        <span class="text-xl">↘</span>
-        
-        elizaveta.malash@gmail.com
-      </a>
+    <!-- Small Heading -->
+    <p class="text-gray-400 text-base sm:text-lg md:text-xl mb-6">
+      Let’s discuss your project:
+    </p>
 
-      <!-- Social Icons -->
-      <div class="flex justify-center items-center gap-8 mt-10 text-gray-400 text-lg">
-        <a href="#" class="hover:text-white transition">in</a>
-        <a href="#" class="hover:text-white transition">Be</a>
-        <a href="#" class="hover:text-white transition">▶</a>
-      </div>
+    <!-- Email -->
+    <a href="mailto:meetgoswami842@gmail.com"
+       class="group inline-flex flex-wrap justify-center items-center gap-2 sm:gap-3
+              text-xl sm:text-2xl md:text-3xl font-semibold
+              border-b border-white pb-2
+              break-all
+              hover:opacity-80 transition">
 
+      <span>meetgoswami842@gmail.com</span>
+    </a>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center items-center gap-6 sm:gap-8 
+                mt-8 md:mt-10 
+                text-gray-400 text-base sm:text-lg">
+      <a href="#" class="hover:text-white transition">in</a>
+      <a href="#" class="hover:text-white transition">Be</a>
+      <a href="#" class="hover:text-white transition">▶</a>
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
 
