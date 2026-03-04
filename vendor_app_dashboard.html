@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+    <title>Vendor Web Dashboard</title>
+</head>
+<body>
+
+<!-- navbar -->
+
+<header class="w-full bg-white/70 backdrop-blur-md sticky top-0 z-50 ">
+  <div class="max-w-[1330px] mx-auto px-6 py-5 flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="text-2xl">
+      <span class="font-semibold font-mono text-black">Meet</span>
+      <!-- <span class="text-gray-500">Malashchuk</span> -->
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-4 text-lg text-gray-600 font-medium">
+      <a href="index.html" class="text-black ">Home page</a>
+      <a href="about.html" class="text-black">About me</a>
+      <a href="portfolio.html" class="text-black">Portfolio</a>
+
+      <!-- Social -->
+    
+
+      <!-- Button -->
+      <a href="contact.html">
+<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
+        Get in touch
+      </button>
+      </a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5">
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden px-6 pb-6">
+    <div class="flex flex-col gap-4 text-gray-700 font-medium">
+      <a href="index.html">Home page</a>
+      <a href="about.html" class="text-black">About me</a>
+      <a href="portfolio.html">Portfolio</a>
+           <a href="contact.html">
+<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
+        Get in touch
+      </button>
+      </a>
+    </div>
+  </div>
+
+</header>
+
+<!-- main hero section -->
+
+
+
+<section class="relative max-w-full mx-auto px-6 ">
+  <section class="relative h-[1000px] overflow-hidden bg-[#edd0fc]  py-20 px-6 rounded-2xl">
+
+    <!-- Decorative Stars -->
+    <div class="absolute top-10 left-10 w-32 h-32 bg-purple-300 opacity-20 blur-3xl rounded-full"></div>
+    <div class="absolute bottom-10 right-10 w-40 h-40 bg-purple-500 opacity-20 blur-3xl rounded-full"></div>
+
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+
+      <!-- Small Icon Badge -->
+      <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-lg mb-6">
+        <span class="text-purple-600 text-xl">✨</span>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="text-4xl md:text-6xl font-semibold text-[#5408b6] leading-tight">
+        Global Garner Vendor App Dashboard <br />
+          </h1>
+
+      <!-- Subtext -->
+      <p class="mt-6 text-lg text-purple-900/80">
+     The Vendor Dashboard acts as a comprehensive control panel for managing your entire business ecosystem.
+      </p>
+
+      <div class="max-w-7xl mx-auto mt-20">
+  <img 
+    src="assets/Group 1000002058.png" 
+    alt="UI Preview"
+    class="w-full   drop-shadow-[0_25px_60px_rgba(0,0,0,0.15)]"  
+  />
+</div>
+
+ 
+    
+      </div>
+
+    </div>
+  </section>
+
+
+</section>
+    
+
+<!-- role -->
+
+  <section class="relative max-w-[1330px] mx-auto px-6 py-24">
+   
+
+  <!-- Top 2 Column Layout -->
+  <div class="grid md:grid-cols-2 gap-16">
+
+    <!-- Left Content -->
+    <div>
+      <p class="text-sm text-gray-500 mb-4">Overview</p>
+
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed">
+        Fitly is a US-based AI platform that replaces traditional A/B testing
+        with continuous, automated experimentation. I led the product design
+        to help lifecycle marketers make data-driven personalization
+        decisions faster.
+      </h2>
+    </div>
+
+    <!-- Right Content -->
+
+    <div class="space-y-8 md:pl-12">
+
+       <div>
+        <p class="text-sm text-gray-500">Company</p>
+        <p class="text-lg font-medium mt-1">Global Garner</p>
+      </div>
+
+      <div>
+        <p class="text-sm text-gray-500">My role</p>
+        <p class="text-lg font-medium mt-1">Product designer</p>
+      </div>
+
+      <div>
+        <p class="text-sm text-gray-500">Platform</p>
+        <p class="text-lg font-medium mt-1">App</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Project Case Study -->
+
+<section class="max-w-[1330px] mx-auto px-6 py-24">
+
+  <!-- Target Users -->
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+
+    <!-- Left Title -->
+    <div class="text-black text-sm md:text-2xl font-semibold">
+Target Users
+    </div>
+
+    <!-- Content -->
+    <div class="md:col-span-3 space-y-4 text-lg leading-relaxed">
+
+      <p class="text-sm md:text-base lg:text-lg">
+The application is designed to help vendors manage their daily operations more efficiently, providing a simple way to track orders, generate and manage bills, and monitor daily earnings without unnecessary complexity. The goal is to streamline routine tasks so vendors can focus more on running their business rather than handling complicated systems.      </p>
+
+      <p class="text-sm md:text-base lg:text-lg">
+       At the same time, the platform supports operations and finance teams by offering clear visibility into order progress, approvals, and fulfillment processes. Finance users can easily monitor commissions, wallet balances, and transaction history, ensuring accurate financial tracking and better operational transparency..
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- Problem Statement -->
+
+   <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10">
+
+    <!-- Left Title -->
+    <div class="text-black text-sm lg:text-2xl font-semibold">
+Problem Statement
+    </div>
+
+    <!-- Content -->
+    <div class="md:col-span-3 space-y-4 text-lg leading-relaxed">
+
+      <p class="text-sm md:text-base lg:text-lg">
+       The existing system had several usability and clarity challenges that made everyday tasks harder for users. Important information was buried within dense layouts, making it difficult to quickly identify key details. Financial data such as bills, commissions, and wallet balances lacked a clear structure, forcing users to spend extra time interpreting the information.  </p>
+
+      <p class="text-sm md:text-base lg:text-lg">
+       In addition, critical actions like Approve, Dispatch, and Withdraw were not clearly highlighted, which slowed down task completion. Many frequently used actions also required unnecessary steps, increasing effort during daily workflows. As a result, users struggled to easily understand order progress and payment status, reducing overall confidence and clarity when using the system.  </p>
+
+    </div>
+
+  </div>
+
+  <!-- image image -->
+
+<div class="image-wrap mt-8 sm:mt-12 lg:mt-24 px-[10px] lg:px-0">
+  <img src="assets/Group 1707479733 (1).png" alt="App Screens" class="w-full h-auto rounded-lg">
+</div>
+
+  <!-- Challenges -->
+
+   <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10">
+
+    <!-- Left Title -->
+    <div class="text-black text-sm md:text-2xl font-semibold">
+Challenges
+    </div>
+
+    <!-- Content -->
+    <div class="md:col-span-3 space-y-4 text-lg leading-relaxed">
+
+      <p class="text-sm md:text-base lg:text-lg">
+From a UX perspective, one of the main challenges was structuring financial data in a way that allowed users to quickly understand important values without having to read through dense information. Order and payment states also needed clear and consistent indicators so users could instantly recognize progress and identify the actions required.
+      <p class="text-sm md:text-base lg:text-lg">
+Another challenge was ensuring consistency across multiple modules by using unified layouts and interaction patterns to create a predictable and seamless user experience. The goal was to present detailed information while still maintaining visual clarity through proper hierarchy and progressive disclosure.
+    </div>
+
+  </div>
+
+    <!-- Project Goals -->
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10">
+
+    <!-- Left Title -->
+    <div class="text-black text-sm md:text-2xl font-semibold">
+Project Goals
+
+    </div>
+
+    <!-- Content -->
+    <div class="md:col-span-3 space-y-4 text-lg leading-relaxed">
+
+      <p class="text-sm md:text-base lg:text-lg">
+To address the identified problems, the design focused on simplifying complex workflows and making tasks easier for vendors to complete. Processes were broken down into clear, logical steps so users could perform actions quickly and confidently. A structured layout with proper spacing and clear typography was introduced to ensure that important information is easy to identify and understand.</p>
+     <p class="text-sm md:text-base lg:text-lg">
+In addition, common actions were streamlined by removing unnecessary steps and optimizing task flows for efficiency. Primary actions were visually prioritized to help users take the right action without hesitation. Clear visibility into order statuses and financial data was also provided, helping users better understand the system while building trust and reducing confusion.</p>    </div>
+
+  </div>
+
+
+      <!-- The Solutions -->
+
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10">
+
+    <!-- Left Title -->
+    <div class="text-black text-sm md:text-2xl font-semibold">
+The Solution
+
+    </div>
+
+    <!-- Content -->
+    <div class="md:col-span-3 space-y-4 text-lg leading-relaxed">
+
+      <p class="text-sm md:text-base lg:text-lg">The solution focused on reducing complexity and creating a more intuitive experience for vendors. A card-based layout was introduced to clearly separate and organize information, improving readability and making important details easier to scan. Consistent color coding was also used for different statuses so users could instantly recognize order and payment states without needing to read detailed text.     <p>
+
+
+        <p class="text-sm md:text-base lg:text-lg">To maintain a cohesive interface, typography, spacing, and button styles were standardized across the application. Primary actions were visually highlighted to help users complete tasks more efficiently and with less hesitation. Navigation was also improved across key sections, allowing users to move smoothly between Orders, Bills, Wallet, and Account areas.</p>
+  </div>
+</div>
+
+<!-- Images images -->
+
+<div class="image-wrap mt-8 sm:mt-12 lg:mt-24 px-[10px] lg:px-0">
+  <img src="assets/Group 1707479733 (1).png" alt="App Screens" class="w-full h-auto rounded-lg">
+</div>
+</section>
+
+
+<!-- Footer  -->
+
+
+<section class="w-full bg-black text-white rounded-t-[40px] 
+                py-16 md:py-20 px-6">
+
+  <div class="max-w-3xl mx-auto text-center">
+
+    <!-- Small Heading -->
+    <p class="text-gray-400 text-base sm:text-lg md:text-xl mb-6">
+      Let’s discuss your project:
+    </p>
+
+    <!-- Email -->
+    <a href="mailto:meetgoswami842@gmail.com"
+       class="group inline-flex flex-wrap justify-center items-center gap-2 sm:gap-3
+              text-xl sm:text-2xl md:text-3xl font-semibold
+              border-b border-white pb-2
+              break-all
+              hover:opacity-80 transition">
+
+      <span>meetgoswami842@gmail.com</span>
+    </a>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center items-center gap-6 sm:gap-4 
+                mt-8 md:mt-10 
+                text-gray-400 text-base sm:text-lg">
+      <a href="#" class="hover:text-white transition">in</a>
+      <a href="#" class="hover:text-white transition">Be</a>
+      <a href="#" class="hover:text-white transition">▶</a>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>

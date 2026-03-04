@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    
+    <!-- navbar -->
+    
+<header class="w-full bg-white/70 backdrop-blur-md sticky top-0 z-50 ">
+  <div class="max-w-[1330px] mx-auto px-6 py-5 flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="text-2xl">
+      <span class="font-semibold font-mono text-black">Meet</span>
+      <!-- <span class="text-gray-500">Malashchuk</span> -->
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-4 text-lg text-gray-600 font-medium">
+      <a href="index.html" class="text-black ">Home page</a>
+      <a href="about.html" class="text-black">About me</a>
+      <a href="portfolio.html" class="text-black">Portfolio</a>
+
+      <!-- Social -->
+    
+
+      <!-- Button -->
+      <a href="contact.html">
+<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
+        Get in touch
+      </button>
+      </a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5">
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden px-6 pb-6">
+    <div class="flex flex-col gap-4 text-gray-700 font-medium">
+      <a href="index.html">Home page</a>
+      <a href="about.html" class="text-black">About me</a>
+      <a href="portfolio.html">Portfolio</a>
+           <a href="contact.html">
+<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
+        Get in touch
+      </button>
+      </a>
+    </div>
+  </div>
+
+</header>
+
+<!-- title -->
+
+<div class="max-w-[1330px] m-auto mt-34 ">
+
+   <div class="mb-14">
+      <h2 class="text-[40px] font-bold text-black mb-4">
+        Portfolio projects
+      </h2>
+      <p class="text-lg text-[#6B7280] max-w-[750px]">
+        Concise case snapshots that show how thoughtful design turns complex product challenges into tangible wins.
+      </p>
+    </div>
+
+
+
+    <!-- projects -->
+
+
+       <div class="grid md:grid-cols-2 gap-8">
+
+              <!-- ================= CARD 1 ================= -->
+
+
+                <a href="vendor_app_dashboard.html">
+
+      <div class="bg-[#fafafa] rounded-[28px] border  border-[#E5E7EB] overflow-hidden" >
+
+
+<div class="relative h-[460px] bg-[#edd0fc] overflow-hidden rounded-t-[28px] flex items-start justify-center pt-16">
+
+  <img 
+    src="assets/browser.png" 
+    class="w-[100%] max-w-[850px] drop-shadow-[0_50px_90px_rgba(0,0,0,0.18)]"
+  >
+
+</div>
+
+        <!-- Content -->
+        <div class="p-8">
+
+          <!-- Tags -->
+          <div class="flex gap-3 mb-6 flex-wrap">
+            <span class="px-4 py-2 bg-[#e4e4e4] text-[#707070] text-sm rounded-lg">
+               Dashboard
+            </span>
+          </div>
+
+          <!-- Title -->
+          <h3 class="text-2xl font-semibold text-black mb-4 leading-snug">
+Global Garner Vendor App Dashboard
+          </h3>
+
+          <!-- Description -->
+          <p class="text-[#6B7280] text-md mb-6">
+The Vendor App enables sellers to manage their business operations anytime and from anywhere with complete convenience. It provides seamless control over product listings, pricing, inventory updates, and order management through a user-friendly interface.          </p>
+
+
+
+        </div>
+      </div>
+      </a>
+      
+
+
+      <!-- ================= CARD 2 ================= -->
+       <a href="krishiva_tech_landing_page.html">
+
+       
+<div class="bg-[#fafafa] rounded-[28px] border border-[#E5E7EB] overflow-hidden">
+
+        <!-- Top Image Area -->
+        <div class="h-[400px] bg-gradient-to-br from-purple-200 via-purple-100 to-white flex items-center justify-center">
+          <img src="assets/por.jpg" class="max-h-full object-contain">
+        </div>
+
+        <!-- Content -->
+        <div class="p-8">
+
+          <!-- Tags -->
+          <div class="flex gap-3 mb-6 flex-wrap">
+            <span class="px-4 py-2 bg-[#e4e4e4] text-[#707070] text-sm rounded-lg">
+              Landing Page
+            </span>
+          </div>
+
+          <!-- Title -->
+          <h3 class="text-2xl font-semibold text-black mb-4 leading-snug">
+              Krishiva Tech Landing Page
+          </h3>
+
+          <!-- Description -->
+          <p class="text-[#6B7280] text-md mb-6">
+This project involved designing a high-converting landing page for Krishiva Tech, a web and mobile software company. The primary objective was to improve clarity, highlight core services, and guide users toward inquiry actions through strategic CTA placement and visual hierarchy.
+
+
+        </div>
+      </div>
+</a>
+
+
+
+            <!-- ================= CARD 3 ================= -->
+             <a href="nirali_food_app.html">
+                 <div class="bg-[#fafafa] rounded-[28px] border border-[#E5E7EB] overflow-hidden">
+
+        <!-- Top Image Area -->
+        <div class="h-[400px] bg-gradient-to-br from-purple-200 via-purple-100 to-white flex items-center justify-center">
+          <img src="assets/por.jpg" class="max-h-full object-contain">
+        </div>
+
+        <!-- Content -->
+        <div class="p-8">
+
+          <!-- Tags -->
+          <div class="flex gap-3 mb-6 flex-wrap">
+            <span class="px-4 py-2 bg-[#e4e4e4] text-[#707070] text-sm rounded-lg">
+              App
+            </span>
+          </div>
+
+          <!-- Title -->
+          <h3 class="text-2xl font-semibold text-black mb-4 leading-snug">
+Nirali Food Machinery - B2C E-Commerce App
+          </h3>
+
+          <!-- Description -->
+          <p class="text-[#6B7280] text-md mb-6">
+A B2C e-commerce mobile application designed for purchasing commercial kitchen and food-processing machinery. The app streamlines the entire buying journey — from product discovery and category browsing to cart management, secure checkout, order tracking, invoices, and account management — while ensuring clarity for high-value transactions.
+
+
+
+
+        </div>
+      </div>
+             </a>
+  
+
+                  <!-- ================= CARD 4 ================= -->
+
+                  <a href="upos_landing_page.html">
+      <div class="bg-[#fafafa] rounded-[28px] border border-[#E5E7EB] overflow-hidden">
+
+        <!-- Top Image Area -->
+        <div class="h-[400px] bg-gradient-to-br from-purple-200 via-purple-100 to-white flex items-center justify-center">
+          <img src="assets/por.jpg" class="max-h-full object-contain">
+        </div>
+
+        <!-- Content -->
+        <div class="p-8">
+
+          <!-- Tags -->
+          <div class="flex gap-3 mb-6 flex-wrap">
+            <span class="px-4 py-2 bg-[#e4e4e4] text-[#707070] text-sm rounded-lg">
+              Landing Page
+            </span>
+          </div>
+
+          <!-- Title -->
+          <h3 class="text-2xl font-semibold text-black mb-4 leading-snug">
+Universal Point of Sales (UPOS) Landing Page
+          </h3>
+
+          <!-- Description -->
+          <p class="text-[#6B7280] text-md mb-6">
+The UPOS Landing Page is the gateway to launching and scaling your digital business. It allows users to explore available plans, compare features, and understand commission structures before selecting the right option. The plan purchase process is secure and simple, ensuring smooth onboarding.
+
+
+
+
+        </div>
+      </div>
+                  </a>
+
+
+  </div>
+    
+
+        </div>
+
+
+
+</div>
+
+
+<!-- footer  -->
+
+<section class="w-full bg-black text-white rounded-t-[40px] 
+                py-16 md:py-20 px-6 mt-20">
+
+  <div class="max-w-3xl mx-auto text-center">
+
+    <!-- Small Heading -->
+    <p class="text-gray-400 text-base sm:text-lg md:text-xl mb-6">
+      Let’s discuss your project:
+    </p>
+
+    <!-- Email -->
+    <a href="mailto:meetgoswami842@gmail.com"
+       class="group inline-flex flex-wrap justify-center items-center gap-2 sm:gap-3
+              text-xl sm:text-2xl md:text-3xl font-semibold
+              border-b border-white pb-2
+              break-all
+              hover:opacity-80 transition">
+
+      <span>meetgoswami842@gmail.com</span>
+    </a>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center items-center gap-6 sm:gap-8 
+                mt-8 md:mt-10 
+                text-gray-400 text-base sm:text-lg">
+      <a href="#" class="hover:text-white transition">in</a>
+      <a href="#" class="hover:text-white transition">Be</a>
+      <a href="#" class="hover:text-white transition">▶</a>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
