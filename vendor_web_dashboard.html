@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script src="script.js" defer></script>
     <title>
 Universal Point of Sales (UPOS) Landing Page</title>
@@ -212,7 +214,7 @@ The original landing page lacked clarity, structure, and a strong conversion foc
      <div class="text-black text-sm lg:text-2xl font-semibold mt-12">
 Old Design:
     </div>
-  <img src="assets/upos-old.jpg" alt="App Screens" class="w-full h-auto rounded-lg mt-4">
+  <img src="assets/dd.png" alt="App Screens" class="w-full h-auto rounded-lg mt-4">
 </div>
 
   <!-- Challenges -->
@@ -281,59 +283,89 @@ To improve readability, text-heavy areas were simplified and spacing was optimiz
 </p>
   </div>
 </div>
-
+</section>
 <!-- Images images -->
 
-<div class="image-wrap mt-8 sm:mt-12 lg:mt-24 px-[10px] lg:px-0">
-    <div class="text-black text-sm lg:text-2xl font-semibold ">
-New Design:
-    </div>
-  <img src="assets/upos-new.jpeg" alt="App Screens" class="w-full h-auto rounded-lg mt-8">
-</div>
-</section>
 
 
-<!-- next project -->
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<section class="w-full bg-[#b7c9d6] py-20">
-    <a href="vendor_app_dashboard.html">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-         <div class="max-w-7xl mx-auto px-6">
+</head>
 
-    <div class="grid md:grid-cols-2 items-center gap-10">
 
-      <!-- Left Content -->
-      <div>
-        <h2 class="text-4xl md:text-5xl font-semibold text-black flex items-center gap-3">
-          Next project
-          <span class="text-4xl">→</span>
-        </h2>
-<p class="mt-4">
-Global Garner Vendor App Dashboard
-        </p>
+
+<div class="w-full px-6 py-10" style="background-color: #252525; padding: 70px;">
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+        <div class="swiper-slide">
+        <div class="shadow w-full rounded-2xl" >
+
+          <!-- <h2 class="text-sm font-semibold mb-2">Home Page</h2>
+          <p>A centralized home page that gives vendors real-time insights into orders, earnings, and performance.</p> -->
+
+          <img 
+            src="assets/vendor_web_home.png"
+            class="w-full h-full object-contain"
+          />
+
+        </div>
+      </div>
+ 
+
+      <!-- Slide 2 -->
+         <div class="swiper-slide">
+        <div class="shadow w-full rounded-2xl" >
+
+          <!-- <h2 class="text-sm font-semibold mb-2">Home Page</h2>
+          <p>A centralized home page that gives vendors real-time insights into orders, earnings, and performance.</p> -->
+
+          <img 
+            src="assets/vendor_web_staff.png"
+            class="w-full h-full object-contain"
+          />
+
+        </div>
       </div>
 
-      <!-- Right Image -->
-      <div class="flex justify-center md:justify-end">
-        <img 
-          src="assets/Group 1000002058.png"
-          alt="project preview"
-          class="max-w-xs md:max-w-sm lg:max-w-md drop-shadow-2xl"
-        >
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="bg-white  p-4 shadow w-full">
+
+          <h2 class="text-sm font-semibold mb-2">ANALYTICS</h2>
+
+          <img 
+            src="assets/Safari - Browsers White Mode.png"
+            class="w-full h-full object-contain bg-gray-100"
+          />
+
+        </div>
       </div>
 
     </div>
+
+    <!-- Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
 
   </div>
-    </a>
- 
-</section>
+</div>
 
-<!-- Footer  -->
 
+
+
+
+<!-- Footer -->
 
 <section class="w-full bg-black text-white rounded-t-[40px] 
-                py-16 md:py-20 px-6">
+                py-16 md:py-20 px-6 mt-10">
 
   <div class="max-w-3xl mx-auto text-center">
 
@@ -354,10 +386,10 @@ Global Garner Vendor App Dashboard
     </a>
 
     <!-- Social Icons -->
-    <div class="flex justify-center items-center gap-6 sm:gap-4 
+    <div class="flex justify-center items-center gap-6 sm:gap-8 
                 mt-8 md:mt-10 
                 text-gray-400 text-base sm:text-lg">
-     <a href="https://www.linkedin.com/in/meet-goswami-b54562143  " target="_blank"
+ <a href="https://www.linkedin.com/in/meet-goswami-b54562143  " target="_blank"
    rel="noopener noreferrer"><img src="assets/linkedin-svgrepo-com (1) 1.svg" class="w-10 h-10"></a>
    
     </div>

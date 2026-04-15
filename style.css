@@ -9,3 +9,17 @@
     font-weight: 500;
     color: #374151;
   }
+
+    .swiper {
+      width: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: #6F38CC;
+    }
