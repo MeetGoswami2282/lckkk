@@ -130,10 +130,10 @@ Universal Point of Sales (UPOS)
 
     <!-- Left Content -->
     <div>
-      <p class="text-sm text-gray-500 mb-4">Overview</p>
+      <p class="text-md text-gray-500 mb-4">Overview</p>
 
-      <h2 class="text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed">
-    The UPOS Landing Page is the gateway to launching and scaling your digital business. It allows users to explore available plans, compare features, and understand commission structures before selecting the right option. The plan purchase process is secure and simple, ensuring smooth onboarding.
+      <h2 class="text-2xl md:text-3xl lg:text-2xl font-medium leading-relaxed">
+A comprehensive vendor dashboard that allows businesses to manage their operations from a single platform, including products, orders, and inventory. It provides a structured interface for smooth management while enabling efficient tracking of payments and transactions.
 
 
       </h2>
@@ -144,18 +144,18 @@ Universal Point of Sales (UPOS)
     <div class="space-y-8 md:pl-12">
 
        <div>
-        <p class="text-sm text-gray-500">Company</p>
+        <p class="text-md text-gray-500">Company</p>
         <p class="text-lg font-medium mt-1">Global Garner</p>
       </div>
 
       <div>
-        <p class="text-sm text-gray-500">My role</p>
+        <p class="text-md text-gray-500">My role</p>
         <p class="text-lg font-medium mt-1">UI/UX Designer</p>
       </div>
 
       <div>
-        <p class="text-sm text-gray-500">Platform</p>
-        <p class="text-lg font-medium mt-1">Landing Page</p>
+        <p class="text-md text-gray-500">Platform</p>
+        <p class="text-lg font-medium mt-1">Web Dashboard</p>
       </div>
     </div>
 
@@ -208,14 +208,7 @@ The original landing page lacked clarity, structure, and a strong conversion foc
 
   </div>
 
-  <!-- image image -->
 
-<div class="image-wrap mt-8 sm:mt-12 lg:mt-24 px-[10px] lg:px-0">
-     <div class="text-black text-sm lg:text-2xl font-semibold mt-12">
-Old Design:
-    </div>
-  <img src="assets/dd.png" alt="App Screens" class="w-full h-auto rounded-lg mt-4">
-</div>
 
   <!-- Challenges -->
 
@@ -370,6 +363,55 @@ To improve readability, text-heavy areas were simplified and spacing was optimiz
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 
+
+
+<style>
+/* Base button */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 48px !important;
+  height: 48px !important;
+  position: absolute;
+  z-index: 50;
+}
+
+/* WHITE CIRCLE (real visible layer) */
+.swiper-button-next::before,
+.swiper-button-prev::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* REMOVE default arrow */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '' !important;
+}
+
+/* CUSTOM ARROW */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #111;
+  border-right: 2px solid #111;
+}
+
+/* directions */
+.swiper-button-prev::after {
+  transform: rotate(-135deg);
+}
+
+.swiper-button-next::after {
+  transform: rotate(45deg);
+}
+</style>
   </div>
 </div>
 
