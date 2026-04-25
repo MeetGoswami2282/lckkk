@@ -24,3 +24,23 @@
     }
   });
 });
+
+
+
+// slider 
+
+
+  const slider = document.getElementById('slider');
+
+  function getCardWidth() {
+    const card = slider.querySelector('div');
+    return card.offsetWidth + 24; // + gap
+  }
+
+  document.getElementById('next').onclick = () => {
+    slider.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
+  };
+
+  document.getElementById('prev').onclick = () => {
+    slider.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+  };

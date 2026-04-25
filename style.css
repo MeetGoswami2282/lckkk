@@ -23,3 +23,13 @@
     .swiper-button-next {
       color: #6F38CC;
     }
+
+
+        .no-scrollbar::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none !important;  /* IE */
+    scrollbar-width: none !important;     /* Firefox */
+  }

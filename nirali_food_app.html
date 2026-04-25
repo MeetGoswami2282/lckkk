@@ -250,6 +250,134 @@ The design also focused on structuring services and content in a way that allows
 </section>
 
 
+<!-- slider -->
+
+
+<div class="max-w-7xl mx-auto px-4 py-10 relative">
+
+  <!-- Buttons -->
+<!-- LEFT -->
+<button id="prev"
+  class="absolute left-2 top-1/2 -translate-y-1/2 z-10
+  w-12 h-12 flex items-center justify-center rounded-full
+  bg-white/80 backdrop-blur-md
+  shadow-[0_8px_20px_rgba(0,0,0,0.08)]
+  hover:shadow-[0_10px_25px_rgba(0,0,0,0.12)]
+  transition">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+    class="w-5 h-5 text-gray-700"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M15 19l-7-7 7-7" />
+  </svg>
+</button>
+
+
+<!-- RIGHT -->
+<button id="next"
+  class="absolute right-2 top-1/2 -translate-y-1/2 z-10
+  w-12 h-12 flex items-center justify-center rounded-full
+  bg-white/80 backdrop-blur-md
+  shadow-[0_8px_20px_rgba(0,0,0,0.08)]
+  hover:shadow-[0_10px_25px_rgba(0,0,0,0.12)]
+  transition">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+    class="w-5 h-5 text-gray-700"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M9 5l7 7-7 7" />
+  </svg>
+</button>
+
+  <!-- Slider -->
+  <div id="slider"
+  class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar">
+    <!-- CARD -->
+
+
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff] p-6">
+      <h3 class="text-sm font-semibold text-black">HOME</h3>
+      <p class="text-sm text-black mb-8">
+Explore machines and categories.
+      </p>
+      <img src="assets/nirali_app_screens/nirali-home_Page.png" class="h-[500px] mx-auto object-contain"/>
+    </div>
+
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+      <h3 class="text-sm font-semibold text-black">KITCHEN MACHINE CATEGORY</h3>
+      <p class="text-sm text-black mb-8">
+        Browse and compare available machines.
+      </p>
+      <img src="assets/nirali_app_screens/nirali-category_detail.png" class="h-[500px] mx-auto object-contain"/>
+    </div>
+
+
+        <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+      <h3 class="text-sm font-semibold text-black">PRODUCT OVERVIEW</h3>
+      <p class="text-sm text-black mb-8">
+Product info, pricing, and options for quick purchase.
+      </p>
+      <img src="assets/nirali_app_screens/niral-product_details.png" class="h-[500px] mx-auto object-contain"/>
+    </div>
+
+         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+      <h3 class="text-sm font-semibold text-black">SHOPPING CART</h3>
+      <p class="text-sm text-black mb-8">
+Review items and proceed to checkout.
+      </p>
+      <img src="assets/nirali_app_screens/nirali-cart.png" class="h-[500px] mx-auto object-contain"/>
+    </div>
+
+         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+      <h3 class="text-sm font-semibold text-black">CHECKOUT PAGE</h3>
+      <p class="text-sm text-black mb-8">
+Review details and place your order.
+      </p>
+      <img src="assets/nirali_app_screens/nirali-checout.png" class="h-[500px] mx-auto object-contain"/>
+    </div>
+
+         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+      <h3 class="text-sm font-semibold text-black">ORDERS OVERVIEW</h3>
+      <p class="text-sm text-black mb-8">
+Track and manage your orders.
+      </p>
+      <img src="assets/nirali_app_screens/nirali-orders.png" class="h-[500px] mx-auto object-contain"/>
+    </div>
+
+         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+      <h3 class="text-sm font-semibold text-black">ORDER DETAILS</h3>
+      <p class="text-sm text-black mb-8">
+View order details, tracking, and invoices.
+      </p>
+      <img src="assets/nirali_app_screens/nirali-order_details.png" class="h-[500px] mx-auto object-contain"/>
+    </div>
+
+
+         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+      <h3 class="text-sm font-semibold text-black">MY ACCOUNT</h3>
+      <p class="text-sm text-black mb-8">
+Manage profile, orders, and settings.
+      </p>
+      <img src="assets/nirali_app_screens/nirali-account.png" class="h-[500px] mx-auto object-contain"/>
+    </div>
+
+       
+
+  </div>
+</div>
+
+
+
+
+
    <a href="portfolio.html" class="block w-fit mx-auto mt-20">
 <button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
         View All Works
