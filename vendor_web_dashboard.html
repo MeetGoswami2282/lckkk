@@ -467,53 +467,6 @@ To improve readability, text-heavy areas were simplified and spacing was optimiz
 
 
 
-<style>
-/* Base button */
-.swiper-button-next,
-.swiper-button-prev {
-  width: 48px !important;
-  height: 48px !important;
-  position: absolute;
-  z-index: 50;
-}
-
-/* WHITE CIRCLE (real visible layer) */
-.swiper-button-next::before,
-.swiper-button-prev::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: #ffffff;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-}
-
-/* REMOVE default arrow */
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: '' !important;
-}
-
-/* CUSTOM ARROW */
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #111;
-  border-right: 2px solid #111;
-}
-
-/* directions */
-.swiper-button-prev::after {
-  transform: rotate(-135deg);
-}
-
-.swiper-button-next::after {
-  transform: rotate(45deg);
-}
-</style>
   </div>
 </div>
 

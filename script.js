@@ -27,6 +27,23 @@
 
 
 
+
+  // faq
+
+
+    const buttons = document.querySelectorAll(".faq-btn");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector("span");
+
+      content.classList.toggle("hidden");
+      icon.classList.toggle("rotate-45");
+    });
+  });
+
+
 // slider 
 
 
@@ -44,3 +61,5 @@
   document.getElementById('prev').onclick = () => {
     slider.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
   };
+
+
