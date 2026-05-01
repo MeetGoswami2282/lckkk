@@ -84,3 +84,39 @@
 .swiper-button-next::after {
   transform: rotate(45deg);
 }
+
+
+
+/* home p[age aniamiton] */
+
+.scroll-reveal {
+  opacity: 0;
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+  z-index: 10;
+}
+.scroll-reveal.from-top {
+  transform: translateX(560px) translateY(-360px);
+}
+.scroll-reveal.from-middle {
+  transform: translateX(540px) translateY(0);
+}
+.scroll-reveal.from-bottom {
+  transform: translateX(360px) translateY(200px);
+}
+.scroll-reveal.duration-1 {
+  transition-duration: 1.4s;
+}
+.scroll-reveal.duration-2 {
+  transition-duration: 1.7s;
+}
+.scroll-reveal.duration-3 {
+  transition-duration: 1.85s;
+}
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+.scroll-reveal.revealed.move-right {
+  transform: translateX(18px) translateY(0);
+}

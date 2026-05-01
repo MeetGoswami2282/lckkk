@@ -1,3 +1,48 @@
+
+
+// hero section animation
+
+const scrollRevealItems = document.querySelectorAll('.scroll-reveal');
+
+  function revealScrollItems() {
+    scrollRevealItems.forEach(item => {
+      const rect = item.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.9) {
+        item.classList.add('revealed');
+      }
+    });
+  }
+
+  if (scrollRevealItems.length > 0) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    scrollRevealItems.forEach(item => revealObserver.observe(item));
+    revealScrollItems();
+
+    window.addEventListener('scroll', () => {
+      revealScrollItems();
+      scrollRevealItems.forEach(item => {
+        if (!item.classList.contains('revealed')) return;
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.7) {
+          item.classList.add('move-right');
+        } else {
+          item.classList.remove('move-right');
+        }
+      });
+    });
+  }
+
+
+
+
+
 // navbar
 
   const menuBtn = document.getElementById('menuBtn');
@@ -61,5 +106,4 @@
   document.getElementById('prev').onclick = () => {
     slider.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
   };
-
 
