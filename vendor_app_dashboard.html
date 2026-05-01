@@ -287,135 +287,129 @@ The Solution
 
 <div class="max-w-7xl mx-auto px-4 py-10 relative">
 
-  <!-- Buttons -->
-<!-- LEFT -->
-<button id="prev"
-  class="absolute left-2 top-1/2 -translate-y-1/2 z-10
-  w-12 h-12 flex items-center justify-center rounded-full
-  bg-white/80 backdrop-blur-md
-  shadow-[0_8px_20px_rgba(0,0,0,0.08)]
-  hover:shadow-[0_10px_25px_rgba(0,0,0,0.12)]
-  transition">
+  <!-- LEFT -->
+  <button id="prev"
+    class="absolute left-2 top-1/2 -translate-y-1/2 z-10
+    w-12 h-12 flex items-center justify-center rounded-full
+    bg-white/80 backdrop-blur-md
+    shadow-[0_8px_20px_rgba(0,0,0,0.08)]
+    hover:shadow-[0_10px_25px_rgba(0,0,0,0.12)]
+    transition">
 
-  <svg xmlns="http://www.w3.org/2000/svg"
-    class="w-5 h-5 text-gray-700"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    stroke-width="2">
-    <path stroke-linecap="round" stroke-linejoin="round"
-      d="M15 19l-7-7 7-7" />
-  </svg>
-</button>
+    <svg xmlns="http://www.w3.org/2000/svg"
+      class="w-5 h-5 text-gray-700"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
 
+  <!-- RIGHT -->
+  <button id="next"
+    class="absolute right-2 top-1/2 -translate-y-1/2 z-10
+    w-12 h-12 flex items-center justify-center rounded-full
+    bg-white/80 backdrop-blur-md
+    shadow-[0_8px_20px_rgba(0,0,0,0.08)]
+    hover:shadow-[0_10px_25px_rgba(0,0,0,0.12)]
+    transition">
 
-<!-- RIGHT -->
-<button id="next"
-  class="absolute right-2 top-1/2 -translate-y-1/2 z-10
-  w-12 h-12 flex items-center justify-center rounded-full
-  bg-white/80 backdrop-blur-md
-  shadow-[0_8px_20px_rgba(0,0,0,0.08)]
-  hover:shadow-[0_10px_25px_rgba(0,0,0,0.12)]
-  transition">
-
-  <svg xmlns="http://www.w3.org/2000/svg"
-    class="w-5 h-5 text-gray-700"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    stroke-width="2">
-    <path stroke-linecap="round" stroke-linejoin="round"
-      d="M9 5l7 7-7 7" />
-  </svg>
-</button>
+    <svg xmlns="http://www.w3.org/2000/svg"
+      class="w-5 h-5 text-gray-700"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
 
   <!-- Slider -->
   <div id="slider"
-  class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar">
+    class="flex gap-4 sm:gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar px-2 sm:px-0">
+
     <!-- CARD -->
-
-
-    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff] p-6">
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff] p-4 sm:p-6">
       <h3 class="text-sm font-semibold text-black">HOME</h3>
-      <p class="text-sm text-black mb-8">
+      <p class="text-xs sm:text-sm text-black mb-4 sm:mb-8">
         AI algorithms analyze preferences to 
-
       </p>
-      <img src="assets/home.png" class="h-[500px] mx-auto object-contain"/>
+      <img src="assets/home.png" class="h-[260px] sm:h-[500px] mx-auto object-contain"/>
     </div>
 
-    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff] p-4 sm:p-6">
       <h3 class="text-sm font-semibold text-black">ORDERS</h3>
-      <p class="text-sm text-black mb-8">
+      <p class="text-xs sm:text-sm text-black mb-4 sm:mb-8">
         View detailed order insights.
       </p>
-      <img src="assets/vendor_app_screen/order.png" class="h-[500px] mx-auto object-contain"/>
+      <img src="assets/vendor_app_screen/order.png" class="h-[260px] sm:h-[500px] mx-auto object-contain"/>
     </div>
 
-
-        <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff] p-4 sm:p-6">
       <h3 class="text-sm font-semibold text-black">ORDER DETAILS</h3>
-      <p class="text-sm text-black mb-8">
-View order info, status, and actions.
+      <p class="text-xs sm:text-sm text-black mb-4 sm:mb-8">
+        View order info, status, and actions.
       </p>
-      <img src="assets/vendor_app_screen/order-details.png" class="h-[500px] mx-auto object-contain"/>
+      <img src="assets/vendor_app_screen/order-details.png" class="h-[260px] sm:h-[500px] mx-auto object-contain"/>
     </div>
 
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff] p-4 sm:p-6">
       <h3 class="text-sm font-semibold text-black">STORE DETAILS</h3>
-      <p class="text-sm text-black mb-8">
-View store information, services, and other details.
+      <p class="text-xs sm:text-sm text-black mb-4 sm:mb-8">
+        View store information, services, and other details.
       </p>
-      <img src="assets/vendor_app_screen/store-detail.png" class="h-[500px] mx-auto object-contain"/>
+      <img src="assets/vendor_app_screen/store-detail.png" class="h-[260px] sm:h-[500px] mx-auto object-contain"/>
     </div>
 
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff] p-4 sm:p-6">
       <h3 class="text-sm font-semibold text-black">ACCOUNT OVERVIEW</h3>
-      <p class="text-sm text-black mb-8">
-Profile details, QR payments, and wallet.
+      <p class="text-xs sm:text-sm text-black mb-4 sm:mb-8">
+        Profile details, QR payments, and wallet.
       </p>
-      <img src="assets/vendor_app_screen/my-account.png" class="h-[500px] mx-auto object-contain"/>
+      <img src="assets/vendor_app_screen/my-account.png" class="h-[260px] sm:h-[500px] mx-auto object-contain"/>
     </div>
 
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff] p-4 sm:p-6">
       <h3 class="text-sm font-semibold text-black">BILL REVIEW</h3>
-      <p class="text-sm text-black mb-8">
-Review, accept, or reject submitted bills.
+      <p class="text-xs sm:text-sm text-black mb-4 sm:mb-8">
+        Review, accept, or reject submitted bills.
       </p>
-      <img src="assets/vendor_app_screen/vendor-bill_review.png" class="h-[500px] mx-auto object-contain"/>
+      <img src="assets/vendor_app_screen/vendor-bill_review.png" class="h-[260px] sm:h-[500px] mx-auto object-contain"/>
     </div>
 
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff] p-4 sm:p-6">
       <h3 class="text-sm font-semibold text-black">WALLET MANAGEMENT</h3>
-      <p class="text-sm text-black mb-8">
-Track earnings, transactions, and withdrawals.
+      <p class="text-xs sm:text-sm text-black mb-4 sm:mb-8">
+        Track earnings, transactions, and withdrawals.
       </p>
-      <img src="assets/vendor_app_screen/wallet.png" class="h-[500px] mx-auto object-contain"/>
+      <img src="assets/vendor_app_screen/wallet.png" class="h-[260px] sm:h-[500px] mx-auto object-contain"/>
     </div>
 
-
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff] p-4 sm:p-6">
       <h3 class="text-sm font-semibold text-black">COMMISSION INVOICES</h3>
-      <p class="text-sm text-black mb-8">
-View, pay, and download commission invoices.
+      <p class="text-xs sm:text-sm text-black mb-4 sm:mb-8">
+        View, pay, and download commission invoices.
       </p>
-      <img src="assets/vendor_app_screen/vendor-commission_invoice.png" class="h-[500px] mx-auto object-contain"/>
+      <img src="assets/vendor_app_screen/vendor-commission_invoice.png" class="h-[260px] sm:h-[500px] mx-auto object-contain"/>
     </div>
 
-          <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff] p-4 sm:p-6">
       <h3 class="text-sm font-semibold text-black">INVOICES DETAILS</h3>
-      <p class="text-sm text-black mb-8">
-View invoice details and pay commission.
+      <p class="text-xs sm:text-sm text-black mb-4 sm:mb-8">
+        View invoice details and pay commission.
       </p>
-      <img src="assets/vendor_app_screen/invoice-details.png" class="h-[500px] mx-auto object-contain"/>
+      <img src="assets/vendor_app_screen/invoice-details.png" class="h-[260px] sm:h-[500px] mx-auto object-contain"/>
     </div>
 
-          <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff] p-4 sm:p-6">
       <h3 class="text-sm font-semibold text-black">HELP & SUPPORT</h3>
-      <p class="text-sm text-black mb-8">
-FAQs, calls, and support tickets.
+      <p class="text-xs sm:text-sm text-black mb-4 sm:mb-8">
+        FAQs, calls, and support tickets.
       </p>
-      <img src="assets/vendor_app_screen/help-support.png" class="h-[500px] mx-auto object-contain"/>
+      <img src="assets/vendor_app_screen/help-support.png" class="h-[260px] sm:h-[500px] mx-auto object-contain"/>
     </div>
 
   </div>

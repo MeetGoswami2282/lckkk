@@ -44,31 +44,32 @@ const scrollRevealItems = document.querySelectorAll('.scroll-reveal');
 
 
 // navbar
-
   const menuBtn = document.getElementById('menuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
 
+  const line1 = document.getElementById('line1');
+  const line2 = document.getElementById('line2');
+  const line3 = document.getElementById('line3');
+
+  let isOpen = false;
+
   menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
-  });
+    isOpen = !isOpen;
 
-  document.addEventListener("DOMContentLoaded", function () {
-  new Swiper(".mySwiper", {
-    slidesPerView: 2,
-    spaceBetween: 20,
-    loop: true,
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints: {
-      0: { slidesPerView: 1 },
-      1024: { slidesPerView: 2 }
+    if (isOpen) {
+      // PERFECT X (no translation mismatch)
+      line1.style.transform = 'rotate(45deg)';
+      line2.style.opacity = '0';
+      line3.style.transform = 'rotate(-45deg)';
+    } else {
+      // Reset to hamburger
+      line1.style.transform = 'translateY(-8px) rotate(0)';
+      line2.style.opacity = '1';
+      line3.style.transform = 'translateY(8px) rotate(0)';
     }
   });
-});
+
 
 
 
