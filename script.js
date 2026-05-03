@@ -108,3 +108,6 @@ const scrollRevealItems = document.querySelectorAll('.scroll-reveal');
     slider.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
   };
 
+
+  // vendor web dashboard slider
+

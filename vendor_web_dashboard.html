@@ -10,8 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script src="script.js" defer></script>
-    <title>
-Universal Point of Sales (UPOS) Landing Page</title>
+    <title>Vendor Web Dashboard</title>
 </head>
 <body>
 
@@ -22,32 +21,28 @@ Universal Point of Sales (UPOS) Landing Page</title>
 
     <!-- Logo -->
     <div class="text-2xl">
-           <a href="index.html"><span class="font-semibold font-mono text-black">Meet</span></a> 
-
+      <a href="index.html"><img src="assets/meet-logo.svg" class="w-10 h-10"></a> 
     </div>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex items-center gap-4 text-lg text-gray-600 font-medium">
+    <nav class="hidden md:flex items-center gap-8 text-lg text-gray-600 font-medium">
       <a href="index.html" class="text-black ">Home page</a>
       <a href="about.html" class="text-black">About me</a>
       <a href="portfolio.html" class="text-black">Portfolio</a>
 
-      <!-- Social -->
-    
-
-      <!-- Button -->
       <a href="contact.html">
-<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
-        Get in touch
-      </button>
+        <button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
+          Get in touch
+        </button>
       </a>
     </nav>
 
-    <!-- Mobile Menu Button -->
-    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5">
-      <span class="w-6 h-0.5 bg-black"></span>
-      <span class="w-6 h-0.5 bg-black"></span>
-      <span class="w-6 h-0.5 bg-black"></span>
+    <!-- Mobile Menu Button (FIXED) -->
+    <button id="menuBtn" class="md:hidden relative w-6 h-6">
+      <!-- All lines centered properly -->
+      <span id="line1" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black -translate-y-2 transition-all duration-300 origin-center"></span>
+      <span id="line2" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black transition-all duration-300 origin-center"></span>
+      <span id="line3" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black translate-y-2 transition-all duration-300 origin-center"></span>
     </button>
 
   </div>
@@ -55,13 +50,14 @@ Universal Point of Sales (UPOS) Landing Page</title>
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="hidden md:hidden px-6 pb-6">
     <div class="flex flex-col gap-4 text-gray-700 font-medium">
-      <a href="index.html">Home page</a>
+      <a href="index.html" class="text-black">Home page</a>
       <a href="about.html" class="text-black">About me</a>
-      <a href="portfolio.html">Portfolio</a>
-           <a href="contact.html">
-<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
-        Get in touch
-      </button>
+      <a href="portfolio.html" class="text-black" >Portfolio</a>
+
+      <a href="contact.html">
+        <button class="bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition max-sm:px-4 max-sm:py-2 max-sm:text-sm">
+          Get in touch
+        </button>
       </a>
     </div>
   </div>
@@ -75,7 +71,7 @@ Universal Point of Sales (UPOS) Landing Page</title>
 <section class="relative max-w-full mx-auto px-6 ">
   <section class="overflow-hidden /20   py-20 px-6 rounded-2xl verflow-hidden rounded-2xl
          bg-cover bg-center bg-no-repeat
-         min-h-screen" style=" background-image: url(assets/vendor-dashbaord.png); 
+         min-h-screen" style=" background-image: url(assets/vendor-dashboard.jpg); 
   
   ">
 
@@ -84,30 +80,6 @@ Universal Point of Sales (UPOS) Landing Page</title>
     <div class="absolute bottom-10 right-10 w-40 h-40 bg-purple-500 opacity-20 blur-3xl rounded-full"></div>
 
     <div class="max-w-6xl mx-auto text-center relative z-10">
-
-      <!-- Small Icon Badge -->
-      <!-- <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-lg mb-6">
-        <span class="text-purple-600 text-xl">✨</span>
-      </div> -->
-
-      <!-- Heading -->
-      <!-- <h1 class="text-4xl md:text-6xl font-semibold text-[#ffffff] leading-tight">
-        
-Universal Point of Sales (UPOS)
-         <br />
-          </h1> -->
-
-      <!-- Subtext -->
-      <!-- <p class="mt-6 text-lg text-white">
- UPOS - The Digital Mall helps you build your business by leveraging the myriad of services provided by Global Garner      </p> -->
-
-      <!-- <div class="max-w-7xl mx-auto mt-20">
-  <img 
-    src="" 
-    alt="UI Preview"
-    class="w-full rounded-[10px] shadow-[0_25px_60px_rgba(255,255,255,0.15)]"  
-  />
-</div> -->
 
  
     
@@ -122,7 +94,7 @@ Universal Point of Sales (UPOS)
 
 <!-- role -->
 
-  <section class="relative max-w-[1330px] mx-auto px-6 py-24">
+  <section class="relative max-w-[1330px] mx-auto px-6 py-18 sm:py-20 md:py-22 lg:py-24">
    
 
   <!-- Top 2 Column Layout -->
@@ -130,9 +102,11 @@ Universal Point of Sales (UPOS)
 
     <!-- Left Content -->
     <div>
-      <p class="text-md text-gray-500 mb-4">Overview</p>
+      <p class="text-md text-gray-500 mb-2 mt-4 sm:mt-0">Overview</p>
 
-      <h2 class="text-2xl md:text-3xl lg:text-2xl font-medium leading-relaxed">
+      <h2 class="text-base sm:text-lg md:text-xl 
+           lg:text-2xl
+           font-medium leading-relaxed">
 A comprehensive vendor dashboard that allows businesses to manage their operations from a single platform, including products, orders, and inventory. It provides a structured interface for smooth management while enabling efficient tracking of payments and transactions.
 
 
@@ -141,23 +115,36 @@ A comprehensive vendor dashboard that allows businesses to manage their operatio
 
     <!-- Right Content -->
 
-    <div class="space-y-8 md:pl-12">
+  <div class="space-y-6 sm:space-y-7 md:space-y-8 md:pl-12">
 
-       <div>
-        <p class="text-md text-gray-500">Company</p>
-        <p class="text-lg font-medium mt-1">Global Garner</p>
-      </div>
+  <div>
+    <p class="text-sm sm:text-base md:text-md lg:text-md text-gray-500">
+      Company
+    </p>
+    <p class="text-base sm:text-lg md:text-lg lg:text-lg font-medium mt-1">
+      Global Garner
+    </p>
+  </div>
 
-      <div>
-        <p class="text-md text-gray-500">My role</p>
-        <p class="text-lg font-medium mt-1">UI/UX Designer</p>
-      </div>
+  <div>
+    <p class="text-sm sm:text-base md:text-md lg:text-md text-gray-500">
+      My role
+    </p>
+    <p class="text-base sm:text-lg md:text-lg lg:text-lg font-medium mt-1">
+      UI/UX Designer
+    </p>
+  </div>
 
-      <div>
-        <p class="text-md text-gray-500">Platform</p>
-        <p class="text-lg font-medium mt-1">Web Dashboard</p>
-      </div>
-    </div>
+  <div>
+    <p class="text-sm sm:text-base md:text-md lg:text-md text-gray-500">
+      Platform
+    </p>
+    <p class="text-base sm:text-lg md:text-lg lg:text-lg font-medium mt-1">
+      Dashboard
+    </p>
+  </div>
+
+</div>
 
   </div>
 
@@ -179,11 +166,9 @@ Targeted Users
     <div class="md:col-span-3 space-y-4 text-lg leading-relaxed">
 
       <p class="text-sm md:text-base lg:text-lg">
-The landing page is designed for retailers and shop owners who are looking for digital tools and financial services to support and grow their businesses. It aims to clearly present the platform’s offerings and help business owners understand how POS and financial solutions can simplify transactions, manage earnings, and improve daily operations.
-</p>
+The platform is designed for vendors and store owners who manage daily operations like orders, billing, customers, and earnings, requiring a centralized system that simplifies workflows and reduces dependency on multiple tools.</p>
       <p class="text-sm md:text-base lg:text-lg">
-The page also targets individuals who are exploring modern POS and financial service platforms for managing payments and business activities. In addition, it helps potential partners evaluate UPOS as a platform for distributing services, expanding their reach, and creating new business opportunities.      </p>
-
+It also supports operations and finance teams who need clear visibility into transactions, commissions, and performance data to ensure accurate tracking, better decision-making, and smooth business operations.
     </div>
 
   </div>
@@ -201,9 +186,9 @@ Problem Statement
     <div class="md:col-span-3 space-y-4 text-lg leading-relaxed">
 
       <p class="text-sm md:text-base lg:text-lg">
-The original landing page lacked clarity, structure, and a strong conversion focus. Important information was scattered across the page, the visual hierarchy was weak, and primary calls to action were not clearly highlighted. As a result, users found it difficult to quickly understand what UPOS offers and why they should sign up.
-</p>
+The previous dashboard lacked a clear visual hierarchy and structured layout, making it difficult for users to quickly scan important data and understand what actions to take. This resulted in confusion and slower task completion.</p>
       
+<p class="text-sm md:text-base lg:text-lg">Additionally, cluttered interfaces and inconsistent navigation increased cognitive load, forcing users to spend more time searching for information and reducing overall operational efficiency.</p>
     </div>
 
   </div>
@@ -223,11 +208,9 @@ Challenges
     <div class="md:col-span-3 space-y-4 text-lg leading-relaxed">
 
       <p class="text-sm md:text-base lg:text-lg">
-From a UX perspective, one of the main challenges was improving the visual hierarchy so users could easily understand the most important information first. The existing content needed to be reorganized in a way that clearly guided user attention and simplified complex service offerings into well-structured, easy-to-digest sections.
-</p>
+One of the main challenges was organizing multiple complex modules such as orders, billing, wallet, and customers into a single cohesive system without overwhelming the user with excessive information.</p>
       <p class="text-sm md:text-base lg:text-lg">
-Another challenge was making primary calls to action more visible and action-driven so users would be encouraged to take the next step. It was also important to reduce cognitive load by minimizing dense text and grouping related information logically, allowing visitors to scan the page quickly and understand the platform’s value more effectively.
-</p>
+Another challenge was balancing high data density with clarity, ensuring that users could access detailed information while maintaining readability and quick actionability.</p>
     </div>
 
   </div>
@@ -246,11 +229,9 @@ Project Goals
     <div class="md:col-span-3 space-y-4 text-lg leading-relaxed">
 
       <p class="text-sm md:text-base lg:text-lg">
-The goal was to transform the outdated layout into a clean and modern SaaS-style landing page that better reflects the platform’s capabilities and professionalism. The design focused on clearly communicating UPOS’s benefits and earning potential so users could quickly understand the value of the platform.
-</p>
+The goal was to design a modern, intuitive dashboard that simplifies complex workflows and provides a seamless experience, allowing users to focus more on their business tasks rather than understanding the interface.</p>
      <p class="text-sm md:text-base lg:text-lg">
-In addition, the content structure was improved to make information easier to scan and navigate. Primary and secondary calls to action were strengthened to encourage user engagement and increase conversions, while credibility was reinforced through a more structured layout, stronger visuals, and trust indicators that help build confidence in the platform.
-</p>
+It also aimed to improve efficiency by highlighting key metrics, simplifying navigation, and making critical actions easily accessible within fewer steps.</p>
   </div>
 </div>
 
@@ -268,12 +249,10 @@ The Solution
     <div class="md:col-span-3 space-y-4 text-lg leading-relaxed">
 
       <p class="text-sm md:text-base lg:text-lg">
-The solution focused on reducing complexity and creating a more intuitive experience for visitors exploring the platform. A strong hero section was introduced with a clear headline, supporting description, and a prominent primary call to action to immediately communicate the platform’s value. The overall content was reorganized into logical sections such as Benefits, Earning Model, Features, Plans, and Trust Indicators to guide users through the information in a structured way.
-</p>
+The redesign introduced a clean, card-based layout with improved spacing, typography, and visual hierarchy, enabling users to quickly scan information and focus on what matters most.</p>
 
         <p class="text-sm md:text-base lg:text-lg">
-To improve readability, text-heavy areas were simplified and spacing was optimized so users could easily scan the page. A clear pricing section was also designed to allow easy comparison between plans. In addition, calls to action were strategically placed throughout the page to guide users toward trial and signup, while consistent typography, spacing, and illustration styles helped create a clean and modern SaaS-style experience.
-</p>
+Navigation and interactions were streamlined using a structured sidebar, clear grouping of features, and actionable elements like filters and buttons, resulting in faster workflows and better usability.</p>
   </div>
 </div>
 </section>
@@ -281,201 +260,157 @@ To improve readability, text-heavy areas were simplified and spacing was optimiz
 
 
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
 </head>
 
 
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-<div class="w-full px-6 py-10" style="background-color: #B4A0F5; padding: 70px;">
+<div class="w-full px-4 sm:px-6 lg:px-10 py-10" style="background-color: #E0DAFF">
+
+
+ 
+
 
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
 
-       <!-- Slides start  -->
-
-  
-         <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/vendor_web_home.png"class="w-full h-full object-contain"/>
-        </div>
-      </div>
-
-
-           <div class="swiper-slide">
-        <div class="" >
-
-        
-         <img 
-            src="assets/vendor_web_screens/Vendor_web_orders.png"
-            class="w-full h-full object-contain"
-          />
-
-        </div>
-      </div>
-
-
-         <div class="swiper-slide">
-        <div class="" >
-
-        
-         <img 
-            src="assets/vendor_web_screens/Vendor_web_categories.png"
-            class="w-full h-full object-contain"
-          />
-
-        </div>
-      </div>
-
-
+      <!-- Slides -->
       <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_products.png"class="w-full h-full object-contain"/>
-        </div>
-      </div>
-
-         <div class="swiper-slide">
-        <div class="" >
-
-        
-         <img 
-            src="assets/vendor_web_screens/Vendor_web_attributes.png"
-            class="w-full h-full object-contain"
-          />
-
-        </div>
-      </div>
-
-
-        <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_voucher.png"class="w-full h-full object-contain"/>
-        </div>
-      </div>
-
-      
-        <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_Inventory.png"class="w-full h-full object-contain"/>
-        </div>
-      </div>
-
-
-
-        <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_bill_review.png"class="w-full h-full object-contain"/>
-        </div>
-      </div>
-
-
-        <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_comission_invoice.png"class="w-full h-full object-contain"/>
-        </div>
-      </div>
-
-      
-        <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_comission_invoice-view_details.png"class="w-full h-full object-contain"/>
-        </div>
-      </div>
-
-        <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_ staff-account.png"class="w-full h-full object-contain"/>
-        </div>
-      </div>
-
-       <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_ create-staff-account.png"class="w-full h-full object-contain"/>
-        </div>
+        <img src="assets/vendor_web_screens/vendor_web_home.png" class="w-full h-full object-contain"/>
       </div>
 
       <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_ roles & permissions.png"class="w-full h-full object-contain"/>
-        </div>
+        <img src="assets/vendor_web_screens/Vendor_web_orders.png" class="w-full h-full object-contain"/>
       </div>
 
-
-
-       <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_ tickets.png"class="w-full h-full object-contain"/>
-        </div>
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_categories.png" class="w-full h-full object-contain"/>
       </div>
 
-       <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_ raise-ticket.png"class="w-full h-full object-contain"/>
-        </div>
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_products.png" class="w-full h-full object-contain"/>
       </div>
 
-      
-       <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_ earning_wallet.png"class="w-full h-full object-contain"/>
-        </div>
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_attributes.png" class="w-full h-full object-contain"/>
       </div>
 
-        <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_ Withdrawal Request.png"class="w-full h-full object-contain"/>
-        </div>
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_voucher.png" class="w-full h-full object-contain"/>
       </div>
 
-        <div class="swiper-slide">
-        <div class="" >
-          <img 
-            src="assets/vendor_web_screens/Vendor_web_personal-details.png"class="w-full h-full object-contain"/>
-        </div>
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_Inventory.png" class="w-full h-full object-contain"/>
       </div>
 
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_bill_review.png" class="w-full h-full object-contain"/>
+      </div>
 
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_comission_invoice.png" class="w-full h-full object-contain"/>
+      </div>
 
-      
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_comission_invoice-view_details.png" class="w-full h-full object-contain"/>
+      </div>
 
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_ staff-account.png" class="w-full h-full object-contain"/>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_ create-staff-account.png" class="w-full h-full object-contain"/>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_ roles & permissions.png" class="w-full h-full object-contain"/>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_ tickets.png" class="w-full h-full object-contain"/>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_ raise-ticket.png" class="w-full h-full object-contain"/>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_ earning_wallet.png" class="w-full h-full object-contain"/>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_ Withdrawal Request.png" class="w-full h-full object-contain"/>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="assets/vendor_web_screens/Vendor_web_personal-details.png" class="w-full h-full object-contain"/>
+      </div>
 
     </div>
 
 
+
+    <button id="prev"
+    class="absolute left-2 top-1/2 -translate-y-1/2 z-10
+    w-12 h-12 flex items-center justify-center rounded-full
+    bg-white/80 backdrop-blur-md
+    shadow-[0_8px_20px_rgba(0,0,0,0.08)]
+    hover:shadow-[0_10px_25px_rgba(0,0,0,0.12)]
+    transition">
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+      class="w-5 h-5 text-gray-700"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+
+  <!-- RIGHT -->
+  <button id="next"
+    class="absolute right-2 top-1/2 -translate-y-1/2 z-10
+    w-12 h-12 flex items-center justify-center rounded-full
+    bg-white/80 backdrop-blur-md
+    shadow-[0_8px_20px_rgba(0,0,0,0.08)]
+    hover:shadow-[0_10px_25px_rgba(0,0,0,0.12)]
+    transition">
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+      class="w-5 h-5 text-gray-700"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
     <!-- Navigation -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-
-
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
 
   </div>
 </div>
 
 
 
+
+
+
 <div class="flex justify-center mt-20">
   <a href="portfolio.html">
-<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
-        View All Works
+<button class="ml-4 
+               bg-black text-white 
+               text-sm sm:text-base md:text-base lg:text-base
+               px-4 py-2 sm:px-5 sm:py-2 md:px-6 md:py-2.5 lg:px-6 lg:py-2.5
+               rounded-full hover:opacity-90 transition">
+       Explore More Projects
       </button>
   </a>
 
@@ -517,5 +452,33 @@ To improve readability, text-heavy areas were simplified and spacing was optimiz
 
 </section>
 
+
+
+
+
+  <script id="swiperjs01">
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      }
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 </body>
 </html>
