@@ -8,10 +8,10 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script src="script.js" defer></script>
-    <title>Lizaa</title>
+    <title>Lauren</title>
 </head>
 <body>
-
+</head>
 
 
   <!-- NAVBAR -->
@@ -20,8 +20,7 @@
 
     <!-- Logo -->
     <div class="text-2xl">
-        <a href="index.html"><span class="font-semibold font-mono text-black">Meet</span></a> 
-
+      <a href="index.html"><img src="assets/meet-logo.svg" class="w-10 h-10"></a> 
     </div>
 
     <!-- Desktop Nav -->
@@ -30,22 +29,19 @@
       <a href="about.html" class="text-black">About me</a>
       <a href="portfolio.html" class="text-black">Portfolio</a>
 
-      <!-- Social -->
-    
-
-      <!-- Button -->
       <a href="contact.html">
-<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
-        Get in touch
-      </button>
+        <button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
+          Get in touch
+        </button>
       </a>
     </nav>
 
-    <!-- Mobile Menu Button -->
-    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5">
-      <span class="w-6 h-0.5 bg-black"></span>
-      <span class="w-6 h-0.5 bg-black"></span>
-      <span class="w-6 h-0.5 bg-black"></span>
+    <!-- Mobile Menu Button (FIXED) -->
+    <button id="menuBtn" class="md:hidden relative w-6 h-6">
+      <!-- All lines centered properly -->
+      <span id="line1" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black -translate-y-2 transition-all duration-300 origin-center"></span>
+      <span id="line2" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black transition-all duration-300 origin-center"></span>
+      <span id="line3" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black translate-y-2 transition-all duration-300 origin-center"></span>
     </button>
 
   </div>
@@ -56,10 +52,11 @@
       <a href="index.html">Home page</a>
       <a href="about.html" class="text-black">About me</a>
       <a href="portfolio.html">Portfolio</a>
-           <a href="contact.html">
-<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
-        Get in touch
-      </button>
+
+      <a href="contact.html">
+        <button class="bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition max-sm:px-4 max-sm:py-2 max-sm:text-sm">
+          Get in touch
+        </button>
       </a>
     </div>
   </div>
@@ -67,65 +64,58 @@
 </header>
 
 
-  <!-- HERO SECTION -->
- 
- 
+
+
   <section class="relative max-w-[1330px] mx-auto py-24">
 
  
 
-  <div class="max-w-[640px]">
+ <div class="max-w-[640px] px-4 sm:px-6 md:px-8 lg:px-0">
 
-    <!-- Heading -->
-    <h2 class="text-4xl sm:text-5xl md:text-6xl 
-               font-semibold text-black 
-               mb-8 leading-tight">
-      Let's work together!
-    </h2>
+  <!-- Heading -->
+  <h2 class="text-2xl sm:text-3xl md:text-4xl 
+             lg:text-6xl 
+             font-semibold text-black 
+             mb-6 lg:mb-8 leading-snug lg:leading-tight">
+    Let's work together!
+  </h2>
 
-    <!-- Description -->
-    <p class="text-lg sm:text-xl 
-              text-[#6B7280] 
-              mb-10 leading-relaxed">
-      Let's begin by discussing the details of the project to
-      make sure we are on the same page.
-    </p>
+  <!-- Description -->
+  <p class="text-sm sm:text-base md:text-lg 
+            lg:text-xl
+            text-[#6B7280] 
+            mb-6 lg:mb-10 leading-relaxed">
+    Let’s turn your idea into a clear, user-friendly digital experience.
+  </p>
 
-    <!-- Email -->
-    <a href="mailto:meetgoswami842@gmail.com"
-       class="inline-flex items-center gap-3 
-              text-3xl sm:text-2xl 
-              font-semibold text-black
-              border-b-2 border-black 
-              pb-2 
-              hover:opacity-70 transition">
-      meetgoswami842@gmail.com
+  <!-- Email -->
+  <a href="mailto:meetgoswami842@gmail.com"
+     class="inline-flex items-center gap-2 sm:gap-3 
+            text-lg sm:text-xl md:text-2xl 
+            lg:text-3xl
+            font-semibold text-black
+            border-b-2 border-black 
+            pb-1 lg:pb-2 
+            hover:opacity-70 transition">
+    meetgoswami842@gmail.com
+  </a>
+
+  <!-- Social Icons -->
+  <div class="flex items-center gap-4 sm:gap-5 lg:gap-6 
+              mt-10 lg:mt-16 text-[#6B7280] text-base lg:text-lg">
+    <a href="https://www.linkedin.com/in/meet-goswami-b54562143" target="_blank"
+       rel="noopener noreferrer">
+      <img src="assets/Vector (2).svg" class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10">
     </a>
-
-    <!-- Social Icons -->
-    <div class="flex items-center gap-6 
-                mt-16 text-[#6B7280] text-lg">
-      <a href="#" class="hover:text-black transition">in</a>
-      <a href="#" class="hover:text-black transition">Bē</a>
-      <a href="#" class="hover:text-black transition">
-        <svg xmlns="http://www.w3.org/2000/svg" 
-             class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M19.615 3.184C18.403 2.78 12 2.78 12 2.78s-6.403 0-7.615.404A2.35 2.35 0 0 0 2.78 4.8C2.376 6.012 2.376 12 2.376 12s0 5.988.404 7.2a2.35 2.35 0 0 0 1.605 1.616C5.597 21.22 12 21.22 12 21.22s6.403 0 7.615-.404a2.35 2.35 0 0 0 1.605-1.616c.404-1.212.404-7.2.404-7.2s0-5.988-.404-7.2a2.35 2.35 0 0 0-1.605-1.616zM9.75 15.568V8.432L15.568 12 9.75 15.568z"/>
-        </svg>
-      </a>
-    </div>
-
   </div>
 
+</div>
+
 </section>
- 
 
 
 
 
-
-
-  
 
 
 
