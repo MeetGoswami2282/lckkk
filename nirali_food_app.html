@@ -297,80 +297,101 @@ The design also focused on structuring services and content in a way that allows
 </button>
 
   <!-- Slider -->
-  <div id="slider"
-  class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar">
-    <!-- CARD -->
+<div id="slider"
+  class="flex gap-4 sm:gap-6 
+         px-4 sm:px-0
+         overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar">
 
-
-    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD] p-6 rounded-xl">
-      <h3 class="text-sm font-semibold text-black">HOME</h3>
-      <p class="text-sm text-black mb-8">
-Explore machines and categories.
-      </p>
-      <img src="assets/nirali_app_screens/nirali-home_Page.png" class="h-[500px] mx-auto object-contain"/>
-    </div>
-
-    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD] p-4 sm:p-6 rounded-xl">
-      <h3 class="text-sm font-semibold text-black">KITCHEN MACHINE CATEGORY</h3>
-      <p class="text-sm text-black mb-8">
-        Browse and compare available machines.
-      </p>
-      <img src="assets/nirali_app_screens/nirali-category_detail.png" class="h-[260px] sm:h-[500px] mx-auto object-contain"/>
-    </div>
-
-
-        <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD]  p-6 rounded-xl ">
-      <h3 class="text-sm font-semibold text-black">PRODUCT OVERVIEW</h3>
-      <p class="text-sm text-black mb-8">
-Product info, pricing, and options for quick purchase.
-      </p>
-      <img src="assets/nirali_app_screens/niral-product_details.png" class="h-[500px] mx-auto object-contain"/>
-    </div>
-
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD]  p-6 rounded-xl ">
-      <h3 class="text-sm font-semibold text-black">SHOPPING CART</h3>
-      <p class="text-sm text-black mb-8">
-Review items and proceed to checkout.
-      </p>
-      <img src="assets/nirali_app_screens/nirali-cart.png" class="h-[500px] mx-auto object-contain"/>
-    </div>
-
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD]  p-6  rounded-xl ">
-      <h3 class="text-sm font-semibold text-black">CHECKOUT PAGE</h3>
-      <p class="text-sm text-black mb-8">
-Review details and place your order.
-      </p>
-      <img src="assets/nirali_app_screens/nirali-checout.png" class="h-[500px] mx-auto object-contain"/>
-    </div>
-
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD]  p-6 rounded-xl ">
-      <h3 class="text-sm font-semibold text-black">ORDERS OVERVIEW</h3>
-      <p class="text-sm text-black mb-8">
-Track and manage your orders.
-      </p>
-      <img src="assets/nirali_app_screens/nirali-orders.png" class="h-[500px] mx-auto object-contain"/>
-    </div>
-
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD]  p-6 rounded-xl ">
-      <h3 class="text-sm font-semibold text-black">ORDER DETAILS</h3>
-      <p class="text-sm text-black mb-8">
-View order details, tracking, and invoices.
-      </p>
-      <img src="assets/nirali_app_screens/nirali-order_details.png" class="h-[500px] mx-auto object-contain"/>
-    </div>
-
-
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD]  p-6 rounded-xl ">
-      <h3 class="text-sm font-semibold text-black">MY ACCOUNT</h3>
-      <p class="text-sm text-black mb-8">
-Manage profile, orders, and settings.
-      </p>
-      <img src="assets/nirali_app_screens/nirali-account.png" class="h-[500px] mx-auto object-contain"/>
-    </div>
-
-       
-
+  <!-- CARD -->
+  <div class="snap-start shrink-0 
+              w-[90%] sm:w-[48%] lg:w-[32%] 
+              bg-[#D3E9DD] p-4 sm:p-6 rounded-xl">
+    <h3 class="text-sm font-semibold text-black">HOME</h3>
+    <p class="text-sm text-black mb-6 sm:mb-8">
+      Explore machines and categories.
+    </p>
+    <img src="assets/nirali_app_screens/nirali-home_Page.png" 
+         class="h-[420px] sm:h-[500px] mx-auto object-contain"/>
   </div>
+
+  <div class="snap-start shrink-0 
+              w-[90%] sm:w-[48%] lg:w-[32%] 
+              bg-[#D3E9DD] p-4 sm:p-6 rounded-xl">
+    <h3 class="text-sm font-semibold text-black">KITCHEN MACHINE CATEGORY</h3>
+    <p class="text-sm text-black mb-6 sm:mb-8">
+      Browse and compare available machines.
+    </p>
+    <img src="assets/nirali_app_screens/nirali-category_detail.png" 
+         class="h-[300px] sm:h-[500px] mx-auto object-contain"/>
+  </div>
+
+  <div class="snap-start shrink-0 
+              w-[90%] sm:w-[48%] lg:w-[32%] 
+              bg-[#D3E9DD] p-4 sm:p-6 rounded-xl">
+    <h3 class="text-sm font-semibold text-black">PRODUCT OVERVIEW</h3>
+    <p class="text-sm text-black mb-6 sm:mb-8">
+      Product info, pricing, and options for quick purchase.
+    </p>
+    <img src="assets/nirali_app_screens/niral-product_details.png" 
+         class="h-[420px] sm:h-[500px] mx-auto object-contain"/>
+  </div>
+
+  <div class="snap-start shrink-0 
+              w-[90%] sm:w-[48%] lg:w-[32%] 
+              bg-[#D3E9DD] p-4 sm:p-6 rounded-xl">
+    <h3 class="text-sm font-semibold text-black">SHOPPING CART</h3>
+    <p class="text-sm text-black mb-6 sm:mb-8">
+      Review items and proceed to checkout.
+    </p>
+    <img src="assets/nirali_app_screens/nirali-cart.png" 
+         class="h-[420px] sm:h-[500px] mx-auto object-contain"/>
+  </div>
+
+  <div class="snap-start shrink-0 
+              w-[90%] sm:w-[48%] lg:w-[32%] 
+              bg-[#D3E9DD] p-4 sm:p-6 rounded-xl">
+    <h3 class="text-sm font-semibold text-black">CHECKOUT PAGE</h3>
+    <p class="text-sm text-black mb-6 sm:mb-8">
+      Review details and place your order.
+    </p>
+    <img src="assets/nirali_app_screens/nirali-checout.png" 
+         class="h-[420px] sm:h-[500px] mx-auto object-contain"/>
+  </div>
+
+  <div class="snap-start shrink-0 
+              w-[90%] sm:w-[48%] lg:w-[32%] 
+              bg-[#D3E9DD] p-4 sm:p-6 rounded-xl">
+    <h3 class="text-sm font-semibold text-black">ORDERS OVERVIEW</h3>
+    <p class="text-sm text-black mb-6 sm:mb-8">
+      Track and manage your orders.
+    </p>
+    <img src="assets/nirali_app_screens/nirali-orders.png" 
+         class="h-[420px] sm:h-[500px] mx-auto object-contain"/>
+  </div>
+
+  <div class="snap-start shrink-0 
+              w-[90%] sm:w-[48%] lg:w-[32%] 
+              bg-[#D3E9DD] p-4 sm:p-6 rounded-xl">
+    <h3 class="text-sm font-semibold text-black">ORDER DETAILS</h3>
+    <p class="text-sm text-black mb-6 sm:mb-8">
+      View order details, tracking, and invoices.
+    </p>
+    <img src="assets/nirali_app_screens/nirali-order_details.png" 
+         class="h-[420px] sm:h-[500px] mx-auto object-contain"/>
+  </div>
+
+  <div class="snap-start shrink-0 
+              w-[90%] sm:w-[48%] lg:w-[32%] 
+              bg-[#D3E9DD] p-4 sm:p-6 rounded-xl">
+    <h3 class="text-sm font-semibold text-black">MY ACCOUNT</h3>
+    <p class="text-sm text-black mb-6 sm:mb-8">
+      Manage profile, orders, and settings.
+    </p>
+    <img src="assets/nirali_app_screens/nirali-account.png" 
+         class="h-[420px] sm:h-[500px] mx-auto object-contain"/>
+  </div>
+
+</div>
 </div>
 
 
