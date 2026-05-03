@@ -19,32 +19,28 @@
 
     <!-- Logo -->
     <div class="text-2xl">
-           <a href="index.html"><span class="font-semibold font-mono text-black">Meet</span></a> 
-
+      <a href="index.html"><img src="assets/meet-logo.svg" class="w-10 h-10"></a> 
     </div>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex items-center gap-4 text-lg text-gray-600 font-medium">
+    <nav class="hidden md:flex items-center gap-8 text-lg text-gray-600 font-medium">
       <a href="index.html" class="text-black ">Home page</a>
       <a href="about.html" class="text-black">About me</a>
       <a href="portfolio.html" class="text-black">Portfolio</a>
 
-      <!-- Social -->
-    
-
-      <!-- Button -->
       <a href="contact.html">
-<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
-        Get in touch
-      </button>
+        <button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
+          Get in touch
+        </button>
       </a>
     </nav>
 
-    <!-- Mobile Menu Button -->
-    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5">
-      <span class="w-6 h-0.5 bg-black"></span>
-      <span class="w-6 h-0.5 bg-black"></span>
-      <span class="w-6 h-0.5 bg-black"></span>
+    <!-- Mobile Menu Button (FIXED) -->
+    <button id="menuBtn" class="md:hidden relative w-6 h-6">
+      <!-- All lines centered properly -->
+      <span id="line1" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black -translate-y-2 transition-all duration-300 origin-center"></span>
+      <span id="line2" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black transition-all duration-300 origin-center"></span>
+      <span id="line3" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black translate-y-2 transition-all duration-300 origin-center"></span>
     </button>
 
   </div>
@@ -52,13 +48,14 @@
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="hidden md:hidden px-6 pb-6">
     <div class="flex flex-col gap-4 text-gray-700 font-medium">
-      <a href="index.html">Home page</a>
+      <a href="index.html" class="text-black">Home page</a>
       <a href="about.html" class="text-black">About me</a>
-      <a href="portfolio.html">Portfolio</a>
-           <a href="contact.html">
-<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
-        Get in touch
-      </button>
+      <a href="portfolio.html" class="text-black" >Portfolio</a>
+
+      <a href="contact.html">
+        <button class="bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition max-sm:px-4 max-sm:py-2 max-sm:text-sm">
+          Get in touch
+        </button>
       </a>
     </div>
   </div>
@@ -82,16 +79,7 @@
 
     <div class="max-w-6xl mx-auto text-center relative z-10">
 
-      <!-- Small Icon Badge -->
-      <!-- <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-lg mb-6">
-        <span class="text-purple-600 text-xl">✨</span>
-      </div> -->
 
-      <!-- Heading -->
-      <h1 class="text-4xl md:text-6xl font-semibold text-[#ffffff] leading-tight">
-        <!-- Nirali Food Machinery - B2C E-Commerce App -->
- <br />
-          </h1>
 
   
   <div class="max-w-7xl mx-auto mt-20 flex justify-center items-center">
@@ -116,7 +104,7 @@
 
 <!-- role -->
 
-  <section class="relative max-w-[1330px] mx-auto px-6 py-24">
+  <section class="relative max-w-[1330px] mx-auto px-6 py-18 sm:py-20 md:py-22 lg:py-24">
    
 
   <!-- Top 2 Column Layout -->
@@ -124,9 +112,11 @@
 
     <!-- Left Content -->
     <div>
-      <p class="text-md text-gray-500 mb-4">Overview</p>
+      <p class="text-md text-gray-500 mb-2 mt-4 sm:mt-0">Overview</p>
 
-      <h2 class="text-2xl md:text-3xl lg:text-2xl font-medium leading-relaxed">
+      <h2 class="text-base sm:text-lg md:text-xl 
+           lg:text-2xl
+           font-medium leading-relaxed">
 A B2C e-commerce mobile application designed for purchasing commercial kitchen and food-processing machinery. The app streamlines the entire buying journey — from product discovery and category browsing to cart management, secure checkout, order tracking, invoices, and account management — while ensuring clarity for high-value transactions.
 
 
@@ -136,23 +126,36 @@ A B2C e-commerce mobile application designed for purchasing commercial kitchen a
 
     <!-- Right Content -->
 
-    <div class="space-y-8 md:pl-12">
+    <div class="space-y-6 sm:space-y-7 md:space-y-8 md:pl-12">
 
-       <div>
-        <p class="text-md text-gray-500">Company</p>
-        <p class="text-lg font-medium mt-1">Nirali Food Machinery </p>
-      </div>
+  <div>
+    <p class="text-sm sm:text-base md:text-md lg:text-md text-gray-500">
+      Company
+    </p>
+    <p class="text-base sm:text-lg md:text-lg lg:text-lg font-medium mt-1">
+      Global Garner
+    </p>
+  </div>
 
-      <div>
-        <p class="text-md text-gray-500">My role</p>
-        <p class="text-lg font-medium mt-1">UI/UX Designer</p>
-      </div>
+  <div>
+    <p class="text-sm sm:text-base md:text-md lg:text-md text-gray-500">
+      My role
+    </p>
+    <p class="text-base sm:text-lg md:text-lg lg:text-lg font-medium mt-1">
+      Nirali Food Machinery
+    </p>
+  </div>
 
-      <div>
-        <p class="text-md text-gray-500">Platform</p>
-        <p class="text-lg font-medium mt-1">E-Commerce App</p>
-      </div>
-    </div>
+  <div>
+    <p class="text-sm sm:text-base md:text-md lg:text-md text-gray-500">
+      Platform
+    </p>
+    <p class="text-base sm:text-lg md:text-lg lg:text-lg font-medium mt-1">
+      App
+    </p>
+  </div>
+
+</div>
 
   </div>
 
@@ -166,7 +169,7 @@ A B2C e-commerce mobile application designed for purchasing commercial kitchen a
   <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
 
     <!-- Left Title -->
-    <div class="text-black text-sm md:text-2xl font-semibold">
+    <div class="text-black text-sm lg:text-2xl font-semibold">
 Targeted Users
     </div>
 
@@ -207,7 +210,7 @@ The objective was to create a clean, modern landing page that effectively showca
    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10">
 
     <!-- Left Title -->
-    <div class="text-black text-sm md:text-2xl font-semibold">
+    <div class="text-black text-sm lg:text-2xl font-semibold">
 Challenges
     </div>
 
@@ -227,7 +230,7 @@ Another challenge was building trust quickly through a professional visual struc
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10">
 
     <!-- Left Title -->
-    <div class="text-black text-sm md:text-2xl font-semibold">
+    <div class="text-black text-sm lg:text-2xl font-semibold">
 Project Goals
 
     </div>
@@ -299,7 +302,7 @@ The design also focused on structuring services and content in a way that allows
     <!-- CARD -->
 
 
-    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff] p-6">
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD] p-6 rounded-xl">
       <h3 class="text-sm font-semibold text-black">HOME</h3>
       <p class="text-sm text-black mb-8">
 Explore machines and categories.
@@ -307,16 +310,16 @@ Explore machines and categories.
       <img src="assets/nirali_app_screens/nirali-home_Page.png" class="h-[500px] mx-auto object-contain"/>
     </div>
 
-    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+    <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD] p-4 sm:p-6 rounded-xl">
       <h3 class="text-sm font-semibold text-black">KITCHEN MACHINE CATEGORY</h3>
       <p class="text-sm text-black mb-8">
         Browse and compare available machines.
       </p>
-      <img src="assets/nirali_app_screens/nirali-category_detail.png" class="h-[500px] mx-auto object-contain"/>
+      <img src="assets/nirali_app_screens/nirali-category_detail.png" class="h-[260px] sm:h-[500px] mx-auto object-contain"/>
     </div>
 
 
-        <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+        <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD]  p-6 rounded-xl ">
       <h3 class="text-sm font-semibold text-black">PRODUCT OVERVIEW</h3>
       <p class="text-sm text-black mb-8">
 Product info, pricing, and options for quick purchase.
@@ -324,7 +327,7 @@ Product info, pricing, and options for quick purchase.
       <img src="assets/nirali_app_screens/niral-product_details.png" class="h-[500px] mx-auto object-contain"/>
     </div>
 
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD]  p-6 rounded-xl ">
       <h3 class="text-sm font-semibold text-black">SHOPPING CART</h3>
       <p class="text-sm text-black mb-8">
 Review items and proceed to checkout.
@@ -332,7 +335,7 @@ Review items and proceed to checkout.
       <img src="assets/nirali_app_screens/nirali-cart.png" class="h-[500px] mx-auto object-contain"/>
     </div>
 
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD]  p-6  rounded-xl ">
       <h3 class="text-sm font-semibold text-black">CHECKOUT PAGE</h3>
       <p class="text-sm text-black mb-8">
 Review details and place your order.
@@ -340,7 +343,7 @@ Review details and place your order.
       <img src="assets/nirali_app_screens/nirali-checout.png" class="h-[500px] mx-auto object-contain"/>
     </div>
 
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD]  p-6 rounded-xl ">
       <h3 class="text-sm font-semibold text-black">ORDERS OVERVIEW</h3>
       <p class="text-sm text-black mb-8">
 Track and manage your orders.
@@ -348,7 +351,7 @@ Track and manage your orders.
       <img src="assets/nirali_app_screens/nirali-orders.png" class="h-[500px] mx-auto object-contain"/>
     </div>
 
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD]  p-6 rounded-xl ">
       <h3 class="text-sm font-semibold text-black">ORDER DETAILS</h3>
       <p class="text-sm text-black mb-8">
 View order details, tracking, and invoices.
@@ -357,7 +360,7 @@ View order details, tracking, and invoices.
     </div>
 
 
-         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#fbfbff]  p-6 ">
+         <div class="snap-start shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] bg-[#D3E9DD]  p-6 rounded-xl ">
       <h3 class="text-sm font-semibold text-black">MY ACCOUNT</h3>
       <p class="text-sm text-black mb-8">
 Manage profile, orders, and settings.
@@ -374,12 +377,18 @@ Manage profile, orders, and settings.
 
 
 
-   <a href="portfolio.html" class="block w-fit mx-auto mt-20">
-<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
-        View All Works
+ <div class="flex justify-center mt-20">
+  <a href="portfolio.html">
+<button class="ml-4 
+               bg-black text-white 
+               text-sm sm:text-base md:text-base lg:text-base
+               px-4 py-2 sm:px-5 sm:py-2 md:px-6 md:py-2.5 lg:px-6 lg:py-2.5
+               rounded-full hover:opacity-90 transition">
+       Explore More Projects
       </button>
-      </a>
-    </nav>
+  </a>
+
+</div>
 
 <!-- Footer  -->
 
