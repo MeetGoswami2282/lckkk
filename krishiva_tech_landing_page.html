@@ -19,32 +19,28 @@
 
     <!-- Logo -->
     <div class="text-2xl">
-        <a href="index.html"><span class="font-semibold font-mono text-black">Meet</span></a> 
-
+      <a href="index.html"><img src="assets/meet-logo.svg" class="w-10 h-10"></a> 
     </div>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex items-center gap-4 text-lg text-gray-600 font-medium">
+    <nav class="hidden md:flex items-center gap-8 text-lg text-gray-600 font-medium">
       <a href="index.html" class="text-black ">Home page</a>
       <a href="about.html" class="text-black">About me</a>
       <a href="portfolio.html" class="text-black">Portfolio</a>
 
-      <!-- Social -->
-    
-
-      <!-- Button -->
       <a href="contact.html">
-<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
-        Get in touch
-      </button>
+        <button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
+          Get in touch
+        </button>
       </a>
     </nav>
 
-    <!-- Mobile Menu Button -->
-    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5">
-      <span class="w-6 h-0.5 bg-black"></span>
-      <span class="w-6 h-0.5 bg-black"></span>
-      <span class="w-6 h-0.5 bg-black"></span>
+    <!-- Mobile Menu Button (FIXED) -->
+    <button id="menuBtn" class="md:hidden relative w-6 h-6">
+      <!-- All lines centered properly -->
+      <span id="line1" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black -translate-y-2 transition-all duration-300 origin-center"></span>
+      <span id="line2" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black transition-all duration-300 origin-center"></span>
+      <span id="line3" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black translate-y-2 transition-all duration-300 origin-center"></span>
     </button>
 
   </div>
@@ -52,63 +48,36 @@
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="hidden md:hidden px-6 pb-6">
     <div class="flex flex-col gap-4 text-gray-700 font-medium">
-      <a href="index.html">Home page</a>
+      <a href="index.html" class="text-black">Home page</a>
       <a href="about.html" class="text-black">About me</a>
-      <a href="portfolio.html">Portfolio</a>
-           <a href="contact.html">
-<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
-        Get in touch
-      </button>
+      <a href="portfolio.html" class="text-black">Portfolio</a>
+
+      <a href="contact.html">
+        <button class="bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition max-sm:px-4 max-sm:py-2 max-sm:text-sm">
+          Get in touch
+        </button>
       </a>
     </div>
   </div>
 
 </header>
 
+
 <!-- main hero section -->
 
 
 
 <section class="relative max-w-full mx-auto px-6 ">
-  <section class="overflow-hidden /20   py-20 px-6 rounded-2xl verflow-hidden rounded-2xl
-         bg-cover bg-center bg-no-repeat
-         min-h-screen" style=" background-image: url(assets/krishivatech\ .jpg); 
-  
-  " >
+   <section class="overflow-hidden py-16 sm:py-18 md:py-20 
+                px-4 sm:px-6 md:px-8 lg:px-6
+                rounded-2xl 
+                bg-cover md:bg-cover lg:bg-cover
+                bg-center md:bg-center lg:bg-center
+                bg-no-repeat
+                min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-screen"
+         
+         style="background-image: url('assets/krishivatech\ .jpg');">
 
-    <!-- Decorative Stars -->
-    <div class="absolute top-10 left-10 w-32 h-32 bg-purple-300 opacity-20 blur-3xl rounded-full"></div>
-    <div class="absolute bottom-10 right-10 w-40 h-40 bg-purple-500 opacity-20 blur-3xl rounded-full"></div>
-
-    <div class="max-w-6xl mx-auto text-center relative z-10">
-
-      <!-- Small Icon Badge -->
-      <!-- <div class="inline-flex items-center justify-center w-14 h-14 bg-white rounded-2xl shadow-lg mb-6">
-        <span class="text-purple-600 text-xl">✨</span>
-      </div> -->
-
-      <!-- Heading -->
-      <!-- <h1 class="text-4xl md:text-6xl font-semibold text-[#ffffff] leading-tight">
-        Krishiva Tech Landing Page <br />
-          </h1> -->
-
-      <!-- Subtext -->
-      <!-- <p class="mt-6 text-lg text-white">
-This project involved designing a high-converting landing page for Krishiva Tech, a web and mobile software company.
-      </p> -->
-
-      <div class="max-w-7xl mx-auto mt-20">
-  <!-- <img 
-    src="" 
-    alt="UI Preview"
-    class="w-full  rounded- drop-shadow-[0_20px_30px_rgba(255,255,255,0.35)] rounded-xl" > -->
-</div>
-
- 
-    
-      </div>
-
-    </div>
   </section>
 
 
@@ -117,7 +86,7 @@ This project involved designing a high-converting landing page for Krishiva Tech
 
 <!-- role -->
 
-  <section class="relative max-w-[1330px] mx-auto px-6 py-24">
+  <section class="relative max-w-[1330px] mx-auto px-6 py-18 sm:py-20 md:py-22 lg:py-24">
    
 
   <!-- Top 2 Column Layout -->
@@ -125,9 +94,11 @@ This project involved designing a high-converting landing page for Krishiva Tech
 
     <!-- Left Content -->
     <div>
-      <p class="text-md text-gray-500 mb-4">Overview</p>
+      <p class="text-md text-gray-500 mb-2 mt-4 sm:mt-0">Overview</p>
 
-      <h2 class="text-2xl max-md:text-[20px] font-medium leading-relaxed">
+      <h2 class="text-base sm:text-lg md:text-xl 
+           lg:text-2xl
+           font-medium leading-relaxed">
        This project involved designing a high-converting landing page for Krishiva Tech, a web and mobile software company. The primary objective was to improve clarity, highlight core services, and guide users toward inquiry actions through strategic CTA placement and visual hierarchy.
 
 
@@ -139,20 +110,31 @@ This project involved designing a high-converting landing page for Krishiva Tech
     <div class="space-y-8 md:pl-12">
 
        <div>
-        <p class="text-md text-gray-500">Company</p>
-        <p class="text-lg font-medium mt-1">Krishiva Tech</p>
-      </div>
+    <p class="text-sm sm:text-base md:text-md lg:text-md text-gray-500">
+      Company
+    </p>
+    <p class="text-base sm:text-lg md:text-lg lg:text-lg font-medium mt-1">
+      Krishiva Tech
+    </p>
+  </div>
 
-      <div>
-        <p class="text-md text-gray-500">My role</p>
-        <p class="text-lg font-medium mt-1">UI/UX Designer</p>
-      </div>
+  <div>
+    <p class="text-sm sm:text-base md:text-md lg:text-md text-gray-500">
+      My role
+    </p>
+    <p class="text-base sm:text-lg md:text-lg lg:text-lg font-medium mt-1">
+      UI/UX Designer
+    </p>
+  </div>
 
-      <div>
-        <p class="text-md text-gray-500">Platform</p>
-        <p class="text-lg font-medium mt-1">Web</p>
-      </div>
-    </div>
+  <div>
+    <p class="text-sm sm:text-base md:text-md lg:text-md text-gray-500">
+      Platform
+    </p>
+    <p class="text-base sm:text-lg md:text-lg lg:text-lg font-medium mt-1">
+      Landing Page
+    </p>
+  </div>
 
   </div>
 
@@ -166,7 +148,7 @@ This project involved designing a high-converting landing page for Krishiva Tech
   <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
 
     <!-- Left Title -->
-    <div class="text-black text-sm md:text-2xl font-semibold">
+    <div class="text-black text-sm lg:text-2xl font-semibold">
 Targeted Users
     </div>
 
@@ -206,7 +188,7 @@ The objective was to create a clean, modern landing page that effectively showca
    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10">
 
     <!-- Left Title -->
-    <div class="text-black text-sm md:text-2xl font-semibold">
+    <div class="text-black text-sm lg:text-2xl font-semibold">
 Challenges
     </div>
 
@@ -226,7 +208,7 @@ Another challenge was building trust quickly through a professional visual struc
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10">
 
     <!-- Left Title -->
-    <div class="text-black text-sm md:text-2xl font-semibold">
+    <div class="text-black text-sm lg:text-2xl font-semibold">
 Project Goals
 
     </div>
@@ -254,15 +236,17 @@ The design also focused on structuring services and content in a way that allows
 
 <div class="flex justify-center">
   <a href="portfolio.html">
-<button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
-        View All Works
+<button class="ml-4 
+               bg-black text-white 
+               text-sm sm:text-base md:text-base lg:text-base
+               px-4 py-2 sm:px-5 sm:py-2 md:px-6 md:py-2.5 lg:px-6 lg:py-2.5
+               rounded-full hover:opacity-90 transition">
+       Explore More Projects
       </button>
   </a>
 
 </div>
 
-
-<!-- Next Project  -->
 
 
 <!-- Footer  -->
