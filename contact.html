@@ -1,124 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<script src="script.js" defer></script>
-    <title>Lauren</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Contact</title>
 </head>
-<body>
-</head>
 
+<body class="antialiased">
 
-  <!-- NAVBAR -->
-<header class="w-full bg-white/70 backdrop-blur-md sticky top-0 z-50 ">
+<!-- Navbar -->
+<header class="w-full bg-white/70 backdrop-blur-md sticky top-0 z-50">
   <div class="max-w-[1330px] mx-auto px-6 py-5 flex items-center justify-between">
 
     <!-- Logo -->
-    <div class="text-2xl">
-      <a href="index.html"><img src="assets/meet-logo.svg" class="w-10 h-10"></a> 
-    </div>
+    <a href="index.html">
+      <img src="assets/meet-logo.svg" class="w-10 h-10">
+    </a>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex items-center gap-8 text-lg text-gray-600 font-medium">
-      <a href="index.html" class="text-black ">Home page</a>
+    <nav class="hidden md:flex items-center gap-8 text-lg font-medium">
+      <a href="index.html" class="text-black">Home</a>
       <a href="about.html" class="text-black">About me</a>
-      <a href="portfolio.html" class="text-black">Portfolio</a>
+      <a href="projects.html" class="text-black">Projects</a>
 
-      <a href="contact.html">
-        <button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
-          Get in touch
-        </button>
+      <a href="contact.html" class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
+        Get in touch
       </a>
     </nav>
 
-    <!-- Mobile Menu Button (FIXED) -->
-    <button id="menuBtn" class="md:hidden relative w-6 h-6">
-      <!-- All lines centered properly -->
-      <span id="line1" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black -translate-y-2 transition-all duration-300 origin-center"></span>
-      <span id="line2" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black transition-all duration-300 origin-center"></span>
-      <span id="line3" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black translate-y-2 transition-all duration-300 origin-center"></span>
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden w-6 h-6 relative">
+      <span class="absolute w-6 h-0.5 bg-black top-2"></span>
+      <span class="absolute w-6 h-0.5 bg-black top-4"></span>
+      <span class="absolute w-6 h-0.5 bg-black top-6"></span>
     </button>
 
   </div>
 
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="hidden md:hidden px-6 pb-6">
-    <div class="flex flex-col gap-4 text-gray-700 font-medium">
-      <a href="index.html">Home page</a>
-      <a href="about.html" class="text-black">About me</a>
-      <a href="portfolio.html">Portfolio</a>
+    <div class="flex flex-col gap-4 font-medium">
+      <a href="index.html">Home</a>
+      <a href="about.html">About me</a>
+      <a href="projects.html">Projects</a>
 
-      <a href="contact.html">
-        <button class="bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition max-sm:px-4 max-sm:py-2 max-sm:text-sm">
-          Get in touch
-        </button>
+      <a href="contact.html" class="bg-black text-white px-6 py-2.5 rounded-full text-center">
+        Get in touch
       </a>
     </div>
   </div>
-
 </header>
 
+<!-- Content -->
+<div class="max-w-[1330px] mx-auto py-24">
+  <div class="max-w-[640px] px-4 sm:px-6 md:px-8 lg:px-0">
 
+    <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold mb-6 leading-tight">
+      Let's work together!
+    </h2>
 
+    <p class="text-base md:text-lg lg:text-xl text-gray-500 mb-8 leading-relaxed">
+      Let’s turn your idea into a clear, user-friendly digital experience.
+    </p>
 
-  <section class="relative max-w-[1330px] mx-auto py-24">
-
- 
-
- <div class="max-w-[640px] px-4 sm:px-6 md:px-8 lg:px-0">
-
-  <!-- Heading -->
-  <h2 class="text-2xl sm:text-3xl md:text-4xl 
-             lg:text-6xl 
-             font-semibold text-black 
-             mb-6 lg:mb-8 leading-snug lg:leading-tight">
-    Let's work together!
-  </h2>
-
-  <!-- Description -->
-  <p class="text-sm sm:text-base md:text-lg 
-            lg:text-xl
-            text-[#6B7280] 
-            mb-6 lg:mb-10 leading-relaxed">
-    Let’s turn your idea into a clear, user-friendly digital experience.
-  </p>
-
-  <!-- Email -->
-  <a href="mailto:meetgoswami842@gmail.com"
-     class="inline-flex items-center gap-2 sm:gap-3 
-            text-lg sm:text-xl md:text-2xl 
-            lg:text-3xl
-            font-semibold text-black
-            border-b-2 border-black 
-            pb-1 lg:pb-2 
-            hover:opacity-70 transition">
-    meetgoswami842@gmail.com
-  </a>
-
-  <!-- Social Icons -->
-  <div class="flex items-center gap-4 sm:gap-5 lg:gap-6 
-              mt-10 lg:mt-16 text-[#6B7280] text-base lg:text-lg">
-    <a href="https://www.linkedin.com/in/meet-goswami-b54562143" target="_blank"
-       rel="noopener noreferrer">
-      <img src="assets/Vector (2).svg" class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10">
+    <a href="mailto:meetgoswami842@gmail.com"
+       class="text-xl md:text-2xl lg:text-3xl font-semibold border-b-2 border-black pb-1 hover:opacity-70 transition">
+      meetgoswami842@gmail.com
     </a>
+
+    <div class="mt-12">
+      <a href="https://www.linkedin.com/in/meet-goswami-b54562143" target="_blank">
+        <img src="assets/Vector (2).svg" class="w-8 h-8">
+      </a>
+    </div>
+
   </div>
-
 </div>
-
-</section>
-
-
-
-
-
-
-
 
 </body>
 </html>

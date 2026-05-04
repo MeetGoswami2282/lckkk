@@ -1,6 +1,14 @@
  body {
   font-family: 'DM Sans', sans-serif;
 }
+
+html {
+  scrollbar-gutter: stable;
+    margin: 0;
+
+}
+
+
 .pill {
     background: #f0f6fb;
     padding: 12px 20px;
