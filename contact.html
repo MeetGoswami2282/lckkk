@@ -18,49 +18,55 @@
   <title>Contact</title>
 </head>
 
-<body class="antialiased">
+<body>
 
 <!-- Navbar -->
-<header class="w-full bg-white/70 backdrop-blur-md sticky top-0 z-50">
+<header class="w-full bg-white/70 backdrop-blur-md sticky top-0 z-50 ">
   <div class="max-w-[1330px] mx-auto px-6 py-5 flex items-center justify-between">
 
     <!-- Logo -->
-    <a href="index.html">
-      <img src="assets/meet-logo.svg" class="w-10 h-10">
-    </a>
+    <div class="text-2xl">
+      <a href="index.html"><img src="assets/meet-logo.svg" class="w-10 h-10"></a> 
+    </div>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex items-center gap-8 text-lg font-medium">
-      <a href="index.html" class="text-black">Home</a>
+    <nav class="hidden md:flex items-center gap-8 text-lg text-gray-600 font-medium">
+      <a href="index.html" class="text-black ">Home</a>
       <a href="about.html" class="text-black">About me</a>
       <a href="projects.html" class="text-black">Projects</a>
 
-      <a href="contact.html" class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
-        Get in touch
+      <a href="contact.html">
+        <button class="ml-4 bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition">
+          Get in touch
+        </button>
       </a>
     </nav>
 
-    <!-- Mobile Button -->
-    <button id="menuBtn" class="md:hidden w-6 h-6 relative">
-      <span class="absolute w-6 h-0.5 bg-black top-2"></span>
-      <span class="absolute w-6 h-0.5 bg-black top-4"></span>
-      <span class="absolute w-6 h-0.5 bg-black top-6"></span>
+    <!-- Mobile Menu Button (FIXED) -->
+    <button id="menuBtn" class="md:hidden relative w-6 h-6">
+      <!-- All lines centered properly -->
+      <span id="line1" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black -translate-y-2 transition-all duration-300 origin-center"></span>
+      <span id="line2" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black transition-all duration-300 origin-center"></span>
+      <span id="line3" class="absolute top-1/2 left-0 w-6 h-0.5 bg-black translate-y-2 transition-all duration-300 origin-center"></span>
     </button>
 
   </div>
 
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="hidden md:hidden px-6 pb-6">
-    <div class="flex flex-col gap-4 font-medium">
+    <div class="flex flex-col gap-4 text-gray-700 font-medium">
       <a href="index.html">Home</a>
-      <a href="about.html">About me</a>
+      <a href="about.html" class="text-black">About me</a>
       <a href="projects.html">Projects</a>
 
-      <a href="contact.html" class="bg-black text-white px-6 py-2.5 rounded-full text-center">
-        Get in touch
+      <a href="contact.html">
+        <button class="bg-black text-white px-6 py-2.5 rounded-full hover:opacity-90 transition max-sm:px-4 max-sm:py-2 max-sm:text-sm">
+          Get in touch
+        </button>
       </a>
     </div>
   </div>
+
 </header>
 
 <!-- Content -->
